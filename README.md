@@ -25,10 +25,10 @@ Installer
 *
 package signing at tempoary repository is not fixed yet.
 need to change pacman.conf entry to:
-`[endeavour]
+`[endeavour]<br>
 #SigLevel = PackageRequired
-SigLevel = Optional TrustAll
-Server = https://github.com/EndeavourOS/repository/releases/download/repository/
+SigLevel = Optional TrustAll<br>
+Server = https://github.com/EndeavourOS/repository/releases/download/repository/<br>
 `
 
 
