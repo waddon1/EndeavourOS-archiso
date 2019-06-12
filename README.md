@@ -22,4 +22,13 @@ xfce4 as live environment
 Basic tools for a livecd
 Installer
 
+*
+package signing at tempoary repository is not fixed yet.
+need to change pacman.conf entry to:
+`[endeavour]
+#SigLevel = PackageRequired
+SigLevel = Optional TrustAll
+Server = https://github.com/EndeavourOS/repository/releases/download/repository/
+`
+
 
