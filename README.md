@@ -5,13 +5,14 @@ These are the basic needed files and folders to build EndeavourOS system.
 
 Clone:
 `git clone https://gitlab.com/EndeavourOS/endeavour_archiso.git`
+
 `cd endeavour_archiso`
 
 # Run fix permissions script
 `sudo ./fix_permissions.sh`
 
 # Build
-`sudo ./build -v`
+`sudo ./build.sh -v`
 
 # The iso appears at work folder
 
