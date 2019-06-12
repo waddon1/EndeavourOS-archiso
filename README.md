@@ -1,7 +1,7 @@
 These are the basic needed files and folders to build EndeavourOS system.
 
 # Install necessary packages first
-`sudo pacman -S archiso arch-install-scripts`
+`sudo pacman -S archiso arch-install-scripts git`
 
 Clone:
 `git clone https://gitlab.com/EndeavourOS/endeavour_archiso.git`
