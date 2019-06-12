@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Offline installer
+Comment=Install Endeavour using the offline installer
+Exec=sudo bash /offline_installer/installer
+Icon=system-software-install
+Path=
+Terminal=true
+StartupNotify=false
