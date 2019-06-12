@@ -23,11 +23,14 @@ Basic tools for a livecd
 Installer
 
 *
-package signing at tempoary repository is not fixed yet.
-need to change pacman.conf entry to:\
+you will need to add and enable endeavour Repository at your system
+adding:
+
 `[endeavour]`\
-`#SigLevel = PackageRequired`\
-`SigLevel = Optional TrustAll`\
+`SigLevel = PackageRequired`\
 `Server = https://github.com/EndeavourOS/repository/releases/download/repository/`
 
-
+to your /etc/pacman.conf
+install keyring package:
+`sudo pacman -U https://github.com/EndeavourOS/repository/releases/download/repository/endeavour-keyring-1-1-any.pkg.tar.xz`
+`sudo pacman -Syy`
