@@ -4,7 +4,7 @@ These are the basic needed files and folders to build EndeavourOS system.
 `sudo pacman -S archiso arch-install-scripts git`
 
 Clone:
-`git clone https://gitlab.com/EndeavourOS/endeavour_archiso.git`
+`git clone https://gitlab.com/EndeavourOS/endeavour_archiso.git`\
 
 `cd endeavour_archiso`
 
@@ -25,10 +25,9 @@ Installer
 *
 package signing at tempoary repository is not fixed yet.
 need to change pacman.conf entry to:
-`[endeavour]<br>
-#SigLevel = PackageRequired
-SigLevel = Optional TrustAll<br>
-Server = https://github.com/EndeavourOS/repository/releases/download/repository/<br>
-`
+`[endeavour]`\
+`#SigLevel = PackageRequired`\
+`SigLevel = Optional TrustAll`\
+`Server = https://github.com/EndeavourOS/repository/releases/download/repository/`\
 
 
