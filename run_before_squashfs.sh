@@ -26,10 +26,7 @@ arch_chroot "export DISPLAY=:0.0
 dbus-launch dconf load / < /etc/skel/dconf.conf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < /etc/skel/dconf.conf'
 rm /etc/skel/dconf.conf
-rm /home/liveuser/dconf.conf
-amixer sset Master unmute
-amixer sset Speaker unmute
-amixer sset Headphone unmute"
+rm /home/liveuser/dconf.conf"
 }
 
 do_install_extra(){
