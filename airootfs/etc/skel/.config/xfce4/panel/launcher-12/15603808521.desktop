@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Install EndeavourOS 
+Comment=get EndeavourOS installed on Harddisk
+Exec=pkexec /usr/bin/calamares
+Icon=/usr/share/endeavouros/sail.png
+Path=
+Terminal=false
+StartupNotify=true
