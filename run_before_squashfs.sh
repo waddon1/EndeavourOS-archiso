@@ -27,7 +27,8 @@ sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavour\/endeavou
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 pacman -U /etc/skel/calamares_installer-1-1-x86_64.pkg.tar.xz --noconfirm
 rm /etc/skel/calamares_installer-1-1-x86_64.pkg.tar.xz
-rm /home/liveuser/calamares_installer-1-1-x86_64.pkg.tar.xz"
+rm /home/liveuser/calamares_installer-1-1-x86_64.pkg.tar.xz
+chmod +x /usr/bin/cleaner_script.sh"
 
 }
 
