@@ -197,8 +197,8 @@ parted
 # 30-system.packages
 expect
 git
-gksu
-pamac
+#gksu
+#pamac
 pkgfile
 reflector
 sudo
@@ -210,7 +210,7 @@ xdg-user-dirs-gtk
 xz
 
 # 40-network.packages
-b43-firmware
+#b43-firmware
 b43-fwcutter
 #broadcom-wl-dkms
 dnsutils
@@ -230,8 +230,8 @@ wireless_tools
 
 # 60-xorg.packages
 mesa
-virtualbox-guest-modules-arch
-virtualbox-guest-utils
+#virtualbox-guest-modules-arch
+#virtualbox-guest-utils
 xf86-input-libinput
 xf86-input-synaptics
 xf86-video-amdgpu
@@ -251,9 +251,9 @@ xf86-video-nouveau
 #nvidia-settings
 
 # 70-loginmanager.packages
-lightdm-webkit2-greeter
+#lightdm-webkit2-greeter
 light-locker
-light-locker-settings
+#light-locker-settings
 
 # 80-desktop.packages
 dconf-editor
@@ -321,7 +321,7 @@ qt5ct
 solid
 git
 qt5-tools
-pythonqt
+#pythonqt
 
 # theme
 arc-icon-theme
@@ -342,5 +342,35 @@ pulseaudio-jack
 #
 xfce4-pulseaudio-plugin
 
+# developers wishes
+pavucontrol
+ffmpegthumbnailer
+poppler-glib
+libgsf 
+libopenraw
+freetype2
 
+yay
+ghex 
+gufw
+linux-headers
+linux-api-headers
+virtualbox
+#virtualbox-ext-vnc
+virtualbox-guest-dkms
+#virtualbox-guest-iso
+virtualbox-guest-utils
+#virtualbox-guest-modules-arch
+#virtualbox-host-modules-arch
+#virtualbox-guest-modules-lts
+#virtualbox-host-modules-lts
+virtualbox-host-dkms
+simple-scan
+#skanlite
+thunderbird
+#evolution
+#geary
 
+#is abiword working?
+#
+# korean, japanese and chinese fonts ??

@@ -29,11 +29,18 @@ rm /etc/skel/dconf.conf
 rm /home/liveuser/dconf.conf"
 }
 
+do_grub_config(){
+
+arch_chroot "sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavour\/endeavouros-wallpaper.png~g' /etc/default/grub
+echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub"
+
+}
+
 do_install_extra(){
 
-arch_chroot "pacman -U /etc/skel/calamares-1-1-x86_64.pkg.tar.xz --noconfirm
-rm /etc/skel/calamares-1-1-x86_64.pkg.tar.xz
-rm /home/liveuser/calamares-1-1-x86_64.pkg.tar.xz"
+arch_chroot "pacman -U /etc/skel/calamares_installer-1-1-x86_64.pkg.tar.xz --noconfirm
+rm /etc/skel/calamares_installer-1-1-x86_64.pkg.tar.xz
+rm /home/liveuser/calamares_installer-1-1-x86_64.pkg.tar.xz"
 
 }
 
@@ -43,4 +50,5 @@ rm /home/liveuser/calamares-1-1-x86_64.pkg.tar.xz"
 
 do_pacman_fix
 do_dconf_dump
-#do_install_extra
+do_grub_config
+do_install_extra

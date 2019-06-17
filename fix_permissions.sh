@@ -24,7 +24,7 @@ chmod +x ./airootfs/offline_installer/installer
 #chmod +x ./airootfs/etc/skel/Desktop/{offline.desktop}
 #,online.desktop}
 #,calamares.desktop}
-chmod +x ./airootfs/usr/bin/cleaner_script.sh
+#chmod +x ./airootfs/usr/bin/cleaner_script.sh
 
 # Just in case
 chmod +x ./{build.sh,mkarchiso,run_before_squashfs.sh,inject_repo.sh}
