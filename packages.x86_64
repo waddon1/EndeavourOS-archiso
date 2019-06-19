@@ -1,138 +1,89 @@
-arch-install-scripts
-b43-fwcutter
-broadcom-wl
-btrfs-progs
-clonezilla
-crda
-darkhttpd
-ddrescue
-dhclient
-dialog
-dmraid
-dnsmasq
-dnsutils
-dosfstools
-elinks
-ethtool
-exfat-utils
-f2fs-tools
-fsarchiver
-gnu-netcat
-gpm
-gptfdisk
-grml-zsh-config
-grub
-hdparm
-ipw2100-fw
-ipw2200-fw
+## base and base-devel are groups already
+base
+base-devel
+
+# Base
+#bash
+#bzip2
+#coreutils
+#cryptsetup
+#device-mapper
+#dhcpcd
+#diffutils
+#e2fsprogs
+#file
+#filesystem
+#findutils
+#gawk
+#gcc-libs
+#gettext
+#glibc
+#grep
+#gzip
+#inetutils
+#iproute2
+#iputils
+#jfsutils
+#less
+#licenses
+#linux
+#logrotate
+#lvm2
+#man-db
+#man-pages
+#mdadm
+#nano
+#netctl
+#pacman
+#pciutils
+##pcmciautils
+#perl
+#procps-ng
+#psmisc
+#reiserfsprogs
+#s-nail
+#sed
+#shadow
+#sysfsutils
+#systemd-sysvcompat
+#tar
+#texinfo
+#usbutils
+#util-linux
+#vi
+#which
+#xfsprogs
+
+# Base devel
+#autoconf
+#automake
+#binutils
+#bison
+#fakeroot
+#file
+#flex
+#gcc
+#groff
+#libtool
+#m4
+#make
+#patch
+#pkg-config
+#sudo
+
+# communication
 irssi
-iwd
-lftp
-linux-atm
+pidgin
+
+# hardware support
 lsscsi
-mc
-mtools
-ndisc6
-nfs-utils
-nilfs-utils
-nmap
-ntfs-3g
-ntp
-openconnect
-openssh
-openvpn
-partclone
-parted
-partimage
-ppp
-pptpclient
-refind-efi
-rp-pppoe
-rsync
 sdparm
 sg3_utils
 smartmontools
-sudo
-tcpdump
-testdisk
 usb_modeswitch
-vim-minimal
-vpnc
-wget
-wireless-regdb
-wireless_tools
-wpa_supplicant
-wvdial
-xl2tpd
 
-# Base
-bash
-bzip2
-coreutils
-cryptsetup
-device-mapper
-dhcpcd
-diffutils
-e2fsprogs
-file
-filesystem
-findutils
-gawk
-gcc-libs
-gettext
-glibc
-grep
-gzip
-inetutils
-iproute2
-iputils
-jfsutils
-less
-licenses
-linux
-logrotate
-lvm2
-man-db
-man-pages
-mdadm
-nano
-netctl
-pacman
-pciutils
-#pcmciautils
-perl
-procps-ng
-psmisc
-reiserfsprogs
-s-nail
-sed
-shadow
-sysfsutils
-systemd-sysvcompat
-tar
-texinfo
-usbutils
-util-linux
-vi
-which
-xfsprogs
-
-# Base devel
-autoconf
-automake
-binutils
-bison
-fakeroot
-file
-flex
-gcc
-groff
-libtool
-m4
-make
-patch
-pkg-config
-sudo
+# EFI/UEFI
+refind-efi
 
 # 00-keyring_mirros.endeavour
 endeavour-keyring
@@ -145,21 +96,18 @@ xorg-xinit
 
 # 03-kernel.endeavour
 linux
+linux-headers
 linux-api-headers
+linux-firmware
 
 # 04-desktop.endeavour
 xfce4
 xfce4-goodies
 
-# 05-DM.endeavour
-# Added this to avoid the need of a lightdm.conf file
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-
-#06-bowser.endeavour
+# 06-bowser.endeavour
 firefox 
 
-#08-extra_stuff.endeavour
+# 08-extra_stuff.endeavour
 # xfce4-alsa-pluggin (AUR) or volumeicon needs to be installed
 volumeicon
 
@@ -167,13 +115,15 @@ volumeicon
 btrfs-progs
 dosfstools
 f2fs-tools
-linux-headers
 lvm2
 mdadm
 mtools
 ntfs-3g
 squashfs-tools
 xfsprogs
+exfat-utils
+nfs-utils
+nilfs-utils
 #zfs
 
 # 20-installation.packages
@@ -193,32 +143,31 @@ hwdetect
 hwinfo
 ntp
 os-prober
-parted
 
 # 30-system.packages
 expect
 git
-#gksu
 #pamac
 pkgfile
 reflector
-sudo
 tlp
 unrar
 unzip
 wget
 xdg-user-dirs-gtk
 xz
+gpm
+vim-minimal
 
 # 40-network.packages
 #b43-firmware
 b43-fwcutter
 #broadcom-wl-dkms
+broadcom-wl
 dnsutils
 intel-ucode
 ipw2100-fw
 ipw2200-fw
-linux-firmware
 modemmanager
 netctl
 net-tools
@@ -228,11 +177,30 @@ nss-mdns
 usb_modeswitch
 whois
 wireless_tools
+dhclient
+dnsmasq
+elinks
+ethtool
+openconnect
+openssh
+openvpn
+rp-pppoe
+wireless-regdb
+wireless_tools
+wpa_supplicant
+wvdial
+gnu-netcat
+iwd
+linux-atm
+ndisc6
+nmap
+ppp
+pptpclient
+vpnc
+xl2tpd
 
 # 60-xorg.packages
 mesa
-#virtualbox-guest-modules-arch
-#virtualbox-guest-utils
 xf86-input-libinput
 xf86-input-synaptics
 xf86-video-amdgpu
@@ -252,9 +220,10 @@ xf86-video-nouveau
 #nvidia-settings
 
 # 70-loginmanager.packages
-#lightdm-webkit2-greeter
 light-locker
 #light-locker-settings
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 
 # 80-desktop.packages
 dconf-editor
@@ -264,6 +233,7 @@ libwnck3
 network-manager-applet
 #pepper-flash
 transmission-gtk
+grml-zsh-config
 
 # 100-calamares.endeavour
 #calamares
@@ -291,10 +261,7 @@ ki18n
 kservice
 kwidgetsaddons
 kpmcore
-
-##bootloader
-#systemd-boot
-#grub
+parted
 
 ##unpackfs
 squashfs-tools
@@ -304,25 +271,30 @@ grsync
 ddrescue
 dd_rescue
 testdisk
+clonezilla
+darkhttpd
+partclone
+partimage
+lftp
+hdparm
+fsarchiver
+mc
 
 #crypt
 cryptsetup
 
 
-#Others
+# others
 qt5-xmlpatterns
 doxygen
-
+tcpdump
 dmidecode
-gptfdisk
 hwinfo
 kparts
-parted
 polkit-qt5
 python
 qt5ct
 solid
-git
 qt5-tools
 #pythonqt
 
@@ -335,19 +307,17 @@ elementary-icon-theme
 adwaita-icon-theme
 ttf-droid
 
-#sound
+# sound
 alsa-utils
 #alsamixer
 #amixer
 alsa-plugins
 #for certain sound cards
 alsa-firmware
-#
 pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-equalizer
 pulseaudio-jack
-#
 xfce4-pulseaudio-plugin
 
 # developers wishes
@@ -369,8 +339,6 @@ gst-plugins-ugly
 yay
 ghex 
 #gufw
-linux-headers
-linux-api-headers
 virtualbox-guest-utils
 virtualbox-guest-modules-arch
 #simple-scan
