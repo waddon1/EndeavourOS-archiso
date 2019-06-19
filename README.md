@@ -14,7 +14,7 @@ Clone:\
 # Build
 `sudo ./build.sh -v`
 
-# The iso appears at work folder
+# The iso appears at out folder
 
 Uses archiso from archlinux as base.
 
