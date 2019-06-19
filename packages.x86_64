@@ -154,9 +154,10 @@ xfce4-goodies
 # 05-DM.endeavour
 # Added this to avoid the need of a lightdm.conf file
 lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 
 #06-bowser.endeavour
-firefox
+firefox 
 
 #08-extra_stuff.endeavour
 # xfce4-alsa-pluggin (AUR) or volumeicon needs to be installed
@@ -261,11 +262,8 @@ file-roller
 gvfs-mtp
 libwnck3
 network-manager-applet
-pepper-flash
+#pepper-flash
 transmission-gtk
-
-# 90-theme.packages
-adwaita-icon-theme
 
 # 100-calamares.endeavour
 #calamares
@@ -300,7 +298,12 @@ kpmcore
 
 ##unpackfs
 squashfs-tools
-rsync
+
+#rescue-tools
+grsync
+ddrescue
+dd_rescue
+testdisk
 
 #crypt
 cryptsetup
@@ -326,6 +329,11 @@ qt5-tools
 # theme
 arc-icon-theme
 arc-gtk-theme
+gtk-engine-murrine
+gnome-themes-extra
+elementary-icon-theme
+adwaita-icon-theme
+ttf-droid
 
 #sound
 alsa-utils
@@ -343,34 +351,30 @@ pulseaudio-jack
 xfce4-pulseaudio-plugin
 
 # developers wishes
+htop 
+glances
+rsync
+
+#needed dependencies
 pavucontrol
 ffmpegthumbnailer
 poppler-glib
 libgsf 
 libopenraw
 freetype2
+gst-libav
+gst-plugins-bad
+gst-plugins-ugly
 
 yay
 ghex 
-gufw
+#gufw
 linux-headers
 linux-api-headers
-virtualbox
-#virtualbox-ext-vnc
-virtualbox-guest-dkms
-#virtualbox-guest-iso
 virtualbox-guest-utils
-#virtualbox-guest-modules-arch
-#virtualbox-host-modules-arch
-#virtualbox-guest-modules-lts
-#virtualbox-host-modules-lts
-virtualbox-host-dkms
-simple-scan
+virtualbox-guest-modules-arch
+#simple-scan
 #skanlite
-thunderbird
+#thunderbird
 #evolution
 #geary
-
-#is abiword working?
-#
-# korean, japanese and chinese fonts ??
