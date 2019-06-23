@@ -2,8 +2,8 @@
 
 set -e -u
 
-iso_name=endeavour
-iso_label="ENDEAVOUR"
+iso_name=endeavouros
+iso_label="ENDEAVOUROS"
 iso_publisher="Arch Linux <http://www.archlinux.org>"
 iso_application="Arch Linux Live/Rescue CD"
 iso_version=$(date +%Y.%m.%d)
