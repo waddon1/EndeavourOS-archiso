@@ -19,7 +19,7 @@ pacman-key --populate
 pacman-key --refresh-keys
 pacman -Syy
 export DISPLAY=:0.0
-dbus-launch dconf load / < /etc/skel/dconf.conf
+#dbus-launch dconf load / < /etc/skel/dconf.conf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < /etc/skel/dconf.conf'
 rm /etc/skel/dconf.conf
 rm /home/liveuser/dconf.conf
