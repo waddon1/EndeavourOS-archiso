@@ -42,13 +42,13 @@ pacman -Syy"
 
 }
 
-do_dconf_dump(){
-arch_chroot "export DISPLAY=:0.0
-dbus-launch dconf load / < /etc/skel/dconf.conf
-sudo -H -u liveuser bash -c 'dbus-launch dconf load / < /etc/skel/dconf.conf'
-rm /etc/skel/dconf.conf
-rm /home/liveuser/dconf.conf"
-}
+#do_dconf_dump(){
+#arch_chroot "export DISPLAY=:0.0
+#dbus-launch dconf load / < /etc/skel/dconf.conf
+#sudo -H -u liveuser bash -c 'dbus-launch dconf load / < /etc/skel/dconf.conf'
+#rm /etc/skel/dconf.conf
+#rm /home/liveuser/dconf.conf"
+#}
 
 do_grub_config(){
 
