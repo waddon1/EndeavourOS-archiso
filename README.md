@@ -41,4 +41,11 @@ install keyring package:
 
 to your /etc/pacman.conf
 
+`[endeavour]`\
+`SigLevel = PackageRequired`\
+`Include = /etc/pacman.d/endeavour-mirrorlist`
+
+
+`sudo pacman -Syy`
+
 ![LiveISO Screenshot](https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/master/ISO-Shot.png "LiveISO Screenshot")
