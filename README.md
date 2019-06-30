@@ -24,8 +24,6 @@ Installer
 
 *
 you will need to add and enable endeavour Repository at your system
-adding:
-
 
 OBS: Do in this order!
 
@@ -38,8 +36,7 @@ install keyring package:
 
 `sudo pacman -U https://github.com/EndeavourOS/repository/releases/download/repository/endeavour-mirrorlist-1-3-any.pkg.tar.xz`
 
-
-to your /etc/pacman.conf
+add the repo bellow to your /etc/pacman.conf
 
 `[endeavour]`\
 `SigLevel = PackageRequired`\
