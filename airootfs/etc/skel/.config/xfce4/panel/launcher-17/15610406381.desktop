@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install System to harddisk
+GenericName=System Installer
+Keywords=calamares;system;installer
+TryExec=calamares
+Exec=pkexec /usr/bin/calamares
+Comment=EndeavourOS — System Installer
+Icon=/usr/share/endeavouros/EndeavourOS-icon.png
+Terminal=false
+StartupNotify=true
+Categories=Qt;System;
+X-AppStream-Ignore=true
+X-XFCE-Source=file:///usr/share/applications/calamares.desktop
+Path=
