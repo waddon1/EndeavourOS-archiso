@@ -2,75 +2,6 @@
 base
 base-devel
 
-# Base
-#bash
-#bzip2
-#coreutils
-#cryptsetup
-#device-mapper
-#dhcpcd
-#diffutils
-#e2fsprogs
-#file
-#filesystem
-#findutils
-#gawk
-#gcc-libs
-#gettext
-#glibc
-#grep
-#gzip
-#inetutils
-#iproute2
-#iputils
-#jfsutils
-#less
-#licenses
-#linux
-#logrotate
-#lvm2
-#man-db
-#man-pages
-#mdadm
-#nano
-#netctl
-#pacman
-#pciutils
-##pcmciautils
-#perl
-#procps-ng
-#psmisc
-#reiserfsprogs
-#s-nail
-#sed
-#shadow
-#sysfsutils
-#systemd-sysvcompat
-#tar
-#texinfo
-#usbutils
-#util-linux
-#vi
-#which
-#xfsprogs
-
-# Base devel
-#autoconf
-#automake
-#binutils
-#bison
-#fakeroot
-#file
-#flex
-#gcc
-#groff
-#libtool
-#m4
-#make
-#patch
-#pkg-config
-#sudo
-
 # communication
 irssi
 pidgin
@@ -85,33 +16,33 @@ usb_modeswitch
 # EFI/UEFI
 refind-efi
 
-# 00-keyring_mirros.endeavour
+# keyring_mirros.endeavour
 endeavour-keyring
 endeavour-mirrorlist
 
-# 01-xorg.endeavour
+# xorg.endeavour
 xf86-video-vesa
 xorg-server
 xorg-xinit
 
-# 03-kernel.endeavour
+# kernel.endeavour
 linux
 linux-headers
 linux-api-headers
 linux-firmware
 
-# 04-desktop.endeavour
+# desktop.endeavour
 xfce4
 xfce4-goodies
 
 # 06-bowser.endeavour
 firefox 
 
-# 08-extra_stuff.endeavour
+# extra_stuff.endeavour
 # xfce4-alsa-pluggin (AUR) or volumeicon needs to be installed
 volumeicon
 
-# 10-filesystems.packages
+# filesystems.packages
 btrfs-progs
 dosfstools
 f2fs-tools
@@ -126,7 +57,7 @@ nfs-utils
 nilfs-utils
 #zfs
 
-# 20-installation.packages
+# installation.packages
 arch-install-scripts
 pacman-contrib
 crda
@@ -144,7 +75,7 @@ hwinfo
 ntp
 os-prober
 
-# 30-system.packages
+# system.packages
 expect
 git
 #pamac
@@ -157,9 +88,8 @@ wget
 xdg-user-dirs-gtk
 xz
 gpm
-vim-minimal
 
-# 40-network.packages
+# network.packages
 #b43-firmware
 b43-fwcutter
 #broadcom-wl-dkms
@@ -199,7 +129,7 @@ pptpclient
 vpnc
 xl2tpd
 
-# 60-xorg.packages
+# xorg.packages
 mesa
 xf86-input-libinput
 xf86-input-synaptics
@@ -210,22 +140,22 @@ xf86-video-intel
 xf86-video-vesa
 xorg-server
 
-# 61-nouveau.packages
+# nouveau.packages
 xf86-video-nouveau
 
-# 62-nvidia.packages
+# nvidia.packages
 #nvidia
 #nvidia-utils
 #nvidia-libgl
 #nvidia-settings
 
-# 70-loginmanager.packages
+# loginmanager.packages
 light-locker
 #light-locker-settings
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
-# 80-desktop.packages
+# desktop.packages
 dconf-editor
 file-roller
 gvfs-mtp
@@ -235,7 +165,7 @@ network-manager-applet
 transmission-gtk
 grml-zsh-config
 
-# 100-calamares.endeavour
+# calamares.endeavour
 #calamares
 lsb-release
 
@@ -306,6 +236,16 @@ gnome-themes-extra
 elementary-icon-theme
 adwaita-icon-theme
 ttf-droid
+ttf-dejavu
+ttf-freefont
+ttf-liberation
+ttf-bitstream-vera
+ttf-ubuntu-font-family
+noto-fonts
+ttf-croscore
+ttf-carlito
+ttf-caladea
+
 
 # sound
 alsa-utils
@@ -324,6 +264,7 @@ xfce4-pulseaudio-plugin
 htop 
 glances
 rsync
+ghex 
 
 #needed dependencies
 pavucontrol
@@ -336,13 +277,11 @@ gst-libav
 gst-plugins-bad
 gst-plugins-ugly
 
+#package.notification
+kalu
+
+# AUR-support 
 yay
-ghex 
-#gufw
+
 virtualbox-guest-utils
 virtualbox-guest-modules-arch
-#simple-scan
-#skanlite
-#thunderbird
-#evolution
-#geary
