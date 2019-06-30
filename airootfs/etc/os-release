@@ -1,8 +1,8 @@
-NAME="Endeavour Linux"
-PRETTY_NAME="Endeavour Linux"
+NAME="EndeavourOS"
+PRETTY_NAME="EndeavourOS"
 ID=arch
 ID_LIKE=archlinux
 ANSI_COLOR="0;36"
-HOME_URL="https://gitlab.com/EndeavourOS"
+HOME_URL="https://endeavouros.com/"
 SUPPORT_URL=""
-BUG_REPORT_URL="https://gitlab.com/EndeavourOS"
+BUG_REPORT_URL="https://github.com/endeavouros-team"
