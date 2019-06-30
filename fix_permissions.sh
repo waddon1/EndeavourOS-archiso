@@ -20,7 +20,7 @@ chown root:root ./airootfs/etc/sudoers.d
 chown root:root ./airootfs/etc/sudoers.d/g_wheel
 chmod 755 ./airootfs/etc
 
-chmod +x ./airootfs/offline_installer/installer
+#chmod +x ./airootfs/offline_installer/installer
 #chmod +x ./airootfs/etc/skel/Desktop/{offline.desktop}
 #,online.desktop}
 #,calamares.desktop}
