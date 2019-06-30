@@ -26,13 +26,19 @@ Installer
 you will need to add and enable endeavour Repository at your system
 adding:
 
-`[endeavour]`\
-`SigLevel = PackageRequired`\
-`Server = https://github.com/EndeavourOS/repository/releases/download/repository/`
+
+OBS: Do in this order!
+
+
+install keyring package:
+
+
+`sudo pacman -U https://github.com/EndeavourOS/repository/releases/download/repository/endeavour-keyring-1-1-any.pkg.tar.xz`
+
+
+`sudo pacman -U https://github.com/EndeavourOS/repository/releases/download/repository/endeavour-mirrorlist-1-3-any.pkg.tar.xz`
+
 
 to your /etc/pacman.conf
-install keyring package:
-`sudo pacman -U https://github.com/EndeavourOS/repository/releases/download/repository/endeavour-keyring-1-1-any.pkg.tar.xz`
-`sudo pacman -Syy`
 
 ![LiveISO Screenshot](https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/master/ISO-Shot.png "LiveISO Screenshot")
