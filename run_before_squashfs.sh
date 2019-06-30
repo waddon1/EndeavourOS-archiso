@@ -23,7 +23,7 @@ export DISPLAY=:0.0
 #sudo -H -u liveuser bash -c 'dbus-launch dconf load / < /etc/skel/dconf.conf'
 #rm /etc/skel/dconf.conf
 #rm /home/liveuser/dconf.conf
-sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavour\/splash.png~g' /etc/default/grub
+sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavouros\/splash.png~g' /etc/default/grub
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 pacman -U /etc/skel/calamares_installer-1-1-x86_64.pkg.tar.xz --noconfirm
 rm /etc/skel/calamares_installer-1-1-x86_64.pkg.tar.xz
@@ -52,7 +52,7 @@ pacman -Syy"
 
 do_grub_config(){
 
-arch_chroot "sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavour\/splash.png~g' /etc/default/grub
+arch_chroot "sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavouros\/splash.png~g' /etc/default/grub
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub"
 
 }
