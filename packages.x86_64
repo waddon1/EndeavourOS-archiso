@@ -169,7 +169,7 @@ grml-zsh-config
 #calamares
 lsb-release
 
-#Main
+# Main
 cmake
 qt5-svg
 qt5-webengine
@@ -177,12 +177,12 @@ yaml-cpp
 extra-cmake-modules
 boost
 
-#Modules
+# Modules
 ## welcome
 networkmanager
 upower
 
-##partition
+## partition
 #kde partition manager
 partitionmanager
 kcoreaddons
@@ -193,10 +193,10 @@ kwidgetsaddons
 kpmcore
 parted
 
-##unpackfs
+## unpackfs
 squashfs-tools
 
-#rescue-tools
+# rescue-tools
 grsync
 ddrescue
 dd_rescue
@@ -245,6 +245,7 @@ noto-fonts
 ttf-croscore
 ttf-carlito
 ttf-caladea
+terminus-font
 
 
 # sound
@@ -266,7 +267,7 @@ glances
 rsync
 ghex 
 
-#needed dependencies
+# needed dependencies
 pavucontrol
 ffmpegthumbnailer
 poppler-glib
@@ -277,7 +278,7 @@ gst-libav
 gst-plugins-bad
 gst-plugins-ugly
 
-#package.notification
+# package.notification
 kalu
 
 # AUR-support 
