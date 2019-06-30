@@ -5,7 +5,6 @@
     <property name="known_applications" type="array">
       <value type="string" value="kalu"/>
       <value type="string" value="notify-send"/>
-      <value type="string" value="Package Manager"/>
     </property>
   </property>
   <property name="primary-monitor" type="uint" value="0"/>
