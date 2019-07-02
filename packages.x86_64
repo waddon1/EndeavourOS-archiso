@@ -74,6 +74,7 @@ hwdetect
 hwinfo
 ntp
 os-prober
+ckbcomp
 
 # system.packages
 expect
