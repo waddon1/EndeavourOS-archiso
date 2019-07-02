@@ -167,7 +167,7 @@ transmission-gtk
 grml-zsh-config
 
 # calamares.endeavour
-calamares
+calamares_offline
 lsb-release
 
 # Main
