@@ -169,6 +169,7 @@ grml-zsh-config
 # calamares.endeavour
 calamares_offline
 lsb-release
+libpwquality
 
 # Main
 cmake
