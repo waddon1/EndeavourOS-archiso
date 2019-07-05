@@ -27,9 +27,9 @@ you will need to add and enable endeavour Repository at your system
 
 If you added the old endeavour repo, please uninstall
 
-sudo pacman -Rns endeavour-keyring endeavour-mirrorlist
+`sudo pacman -Rns endeavour-keyring endeavour-mirrorlist`
 
-remove the old repo from /etc/pacman.conf
+`remove the old repo from /etc/pacman.conf`
 
 OBS: Do in this order!
 
