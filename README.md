@@ -25,22 +25,30 @@ Installer
 *
 you will need to add and enable endeavour Repository at your system
 
+If you added the old endeavour repo, please uninstall
+
+sudo pacman -Rns endeavour-keyring endeavour-mirrorlist
+
+remove the old repo from /etc/pacman.conf
+
 OBS: Do in this order!
 
 
 install keyring package:
 
+`wget wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
 
-`sudo pacman -U https://github.com/EndeavourOS/repository/releases/download/repository/endeavour-keyring-1-1-any.pkg.tar.xz`
+`wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-mirrorlist-1-1-any.pkg.tar.xz`
 
+`sudo pacman -U endeavouros-keyring-1-1-any.pkg.tar.xz`
 
-`sudo pacman -U https://github.com/EndeavourOS/repository/releases/download/repository/endeavour-mirrorlist-1-3-any.pkg.tar.xz`
+`sudo pacman -U endeavouros-mirrorlist-1-1-any.pkg.tar.xz`
 
 add the repo bellow to your /etc/pacman.conf
 
-`[endeavour]`\
+`[endeavouros]`\
 `SigLevel = PackageRequired`\
-`Include = /etc/pacman.d/endeavour-mirrorlist`
+`Include = /etc/pacman.d/endeavouros-mirrorlist`\
 
 
 `sudo pacman -Syy`
