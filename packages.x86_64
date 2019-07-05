@@ -17,8 +17,8 @@ usb_modeswitch
 refind-efi
 
 # keyring_mirros.endeavour
-endeavour-keyring
-endeavour-mirrorlist
+endeavouros-keyring
+endeavouros-mirrorlist
 
 # xorg.endeavour
 xf86-video-vesa
