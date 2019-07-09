@@ -26,6 +26,7 @@ mv cleaner_script.sh /usr/bin/cleaner_script.sh"
 #injecting Desktop settings for LiveUser:
 git clone https://github.com/endeavouros-team/liveuser-desktop-settings.git
 cd liveuser-desktop-settings
+rm -R /home/liveuser/.config
 cp -R .config /home/liveuser/
 chown -R liveuser:users /home/liveuser/.config
 cd .. 
