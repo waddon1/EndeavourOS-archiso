@@ -55,6 +55,7 @@ exfat-utils
 nfs-utils
 nilfs-utils
 #zfs
+mlocate
 
 # installation.packages
 arch-install-scripts
