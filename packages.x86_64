@@ -4,7 +4,6 @@ base-devel
 
 # communication
 irssi
-pidgin
 
 # hardware support
 lsscsi
@@ -194,6 +193,7 @@ kservice
 kwidgetsaddons
 kpmcore
 parted
+gparted
 
 ## unpackfs
 squashfs-tools
@@ -281,7 +281,7 @@ gst-plugins-bad
 gst-plugins-ugly
 
 # package.notification
-kalu
+#kalu
 
 # AUR-support 
 yay
