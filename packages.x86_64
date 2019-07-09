@@ -267,7 +267,8 @@ xfce4-pulseaudio-plugin
 htop 
 glances
 rsync
-ghex 
+ghex
+hardinfo
 
 # needed dependencies
 pavucontrol
@@ -281,7 +282,7 @@ gst-plugins-bad
 gst-plugins-ugly
 
 # package.notification
-#kalu
+kalu
 
 # AUR-support 
 yay
