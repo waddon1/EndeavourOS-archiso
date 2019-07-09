@@ -164,6 +164,7 @@ network-manager-applet
 #pepper-flash
 transmission-gtk
 grml-zsh-config
+galculator
 
 # calamares.endeavour
 calamares_offline
