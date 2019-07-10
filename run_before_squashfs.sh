@@ -23,14 +23,6 @@ echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 wget https://github.com/Portergos/calamares/raw/master/cleaner_script.sh
 chmod +x cleaner_script.sh
 mv cleaner_script.sh /usr/bin/cleaner_script.sh"
-#injecting Desktop settings for LiveUser:
-git clone https://github.com/endeavouros-team/liveuser-desktop-settings.git
-cd liveuser-desktop-settings
-rm -R /home/liveuser/.config
-cp -R .config /home/liveuser/
-chown -R liveuser:users /home/liveuser/.config
-cd .. 
-rm -R liveuser-desktop-settings
 }
 
 #################################
