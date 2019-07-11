@@ -35,7 +35,8 @@ xfce4
 xfce4-goodies
 
 # 06-bowser.endeavour
-firefox 
+firefox
+firefox-ublock-origin 
 
 # extra_stuff.endeavour
 # xfce4-alsa-pluggin (AUR) or volumeicon needs to be installed
@@ -56,6 +57,13 @@ nfs-utils
 nilfs-utils
 #zfs
 mlocate
+gvfs
+gvfs-afc
+gvfs-goa
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
 
 # installation.packages
 arch-install-scripts
