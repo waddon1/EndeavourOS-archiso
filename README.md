@@ -36,19 +36,19 @@ OBS: Do in this order!
 
 install keyring package:
 
-`wget wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
+ wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
 
-`wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-mirrorlist-1-1-any.pkg.tar.xz`
+`wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-mirrorlist-1-2-any.pkg.tar.xz`
 
 `sudo pacman -U endeavouros-keyring-1-1-any.pkg.tar.xz`
 
-`sudo pacman -U endeavouros-mirrorlist-1-1-any.pkg.tar.xz`
+`sudo pacman -U endeavouros-mirrorlist-1-2-any.pkg.tar.xz`
 
 add the repo bellow to your /etc/pacman.conf
 
 `[endeavouros]`\
 `SigLevel = PackageRequired`\
-`Include = /etc/pacman.d/endeavouros-mirrorlist`\
+`Include = /etc/pacman.d/endeavouros-mirrorlist`
 
 
 `sudo pacman -Syy`
