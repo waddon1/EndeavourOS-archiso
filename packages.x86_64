@@ -33,6 +33,8 @@ linux-firmware
 # desktop.endeavour
 xfce4
 xfce4-goodies
+#--> needs to be addet to the repo first
+#grub-theme-endeavouros
 
 # 06-bowser.endeavour
 firefox
