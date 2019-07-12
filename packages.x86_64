@@ -251,7 +251,8 @@ elementary-icon-theme
 adwaita-icon-theme
 ttf-droid
 ttf-dejavu
-ttf-freefont
+#ttf-freefont <--- replaced by:
+gnu-free-fonts
 ttf-liberation
 ttf-bitstream-vera
 ttf-ubuntu-font-family
