@@ -19,8 +19,8 @@ pacman-key --populate
 pacman-key --refresh-keys
 pacman -Syy
 #sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavouros\/splash.png~g' /etc/default/grub
-sed -i 's~\GRUB_THEME=.*~GRUB_THEME="\/boot\/grub\/themes\/EndeavourOS\/theme.txt~g' /etc/default/grub
-echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
+sed -i 's~\GRUB_THEME=.*~GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.txt~g' /etc/default/grub
+#echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 wget https://github.com/Portergos/calamares/raw/master/cleaner_script.sh
 chmod +x cleaner_script.sh
 mv cleaner_script.sh /usr/bin/cleaner_script.sh"
@@ -31,4 +31,3 @@ mv cleaner_script.sh /usr/bin/cleaner_script.sh"
 #################################
 
 do_merge
-
