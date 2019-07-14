@@ -35,7 +35,7 @@
         <value type="uint" value="65535"/>
       </property>
       <property name="length-adjust" type="bool" value="false"/>
-      <property name="disable-struts" type="bool" value="true"/>
+      <property name="disable-struts" type="bool" value="false"/>
     </property>
   </property>
   <property name="plugins" type="empty">
