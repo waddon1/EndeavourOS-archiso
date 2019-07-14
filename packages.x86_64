@@ -182,6 +182,9 @@ calamares_offline
 lsb-release
 libpwquality
 
+# for launcher
+yad
+
 # Main
 cmake
 qt5-svg
