@@ -18,6 +18,11 @@ cd liveuser-desktop-settings
 rm -R /home/liveuser/.config
 cp -R .config /home/liveuser/
 chown -R liveuser:users /home/liveuser/.config
+cp install /home/liveuser/
+chmod +x /home/liveuser/install
+chown liveuser:users /home/liveuser/install
+cp preinfo.txt /home/liveuser/
+chown liveuser:users /home/liveuser/preinfo.txt
 cd .. 
 rm -R liveuser-desktop-settings
 #
