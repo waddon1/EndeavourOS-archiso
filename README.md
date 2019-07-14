@@ -1,7 +1,7 @@
 These are the basic needed files and folders to build EndeavourOS system.
 
 # Install necessary packages first
-`sudo pacman -S archiso arch-install-scripts git`
+`sudo pacman -S archiso arch-install-scripts git squashfs-tools `
 
 Clone:\
 `git clone https://github.com/endeavouros-team/archiso-offlineinstaller.git`
