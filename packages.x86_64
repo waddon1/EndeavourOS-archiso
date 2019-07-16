@@ -27,7 +27,6 @@ xorg-xinit
 # kernel.endeavour
 linux
 linux-headers
-linux-api-headers
 linux-firmware
 
 # desktop.endeavour
@@ -42,7 +41,7 @@ firefox-ublock-origin
 
 # extra_stuff.endeavour
 # xfce4-alsa-pluggin (AUR) or volumeicon needs to be installed
-volumeicon
+#volumeicon
 
 # filesystems.packages
 btrfs-progs
@@ -83,7 +82,7 @@ haveged
 hwdetect
 hwinfo
 ntp
-os-prober
+#os-prober
 ckbcomp
 
 # system.packages
