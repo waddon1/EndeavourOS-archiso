@@ -33,7 +33,7 @@ linux-firmware
 # desktop.endeavour
 xfce4
 xfce4-goodies
-#--> needs to be ad the repo first
+#--> needs to be at the repo first
 grub2-theme-endeavouros
 
 # 06-bowser.endeavour
