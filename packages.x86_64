@@ -42,7 +42,7 @@ firefox-ublock-origin
 
 # extra_stuff.endeavour
 # xfce4-alsa-pluggin (AUR) or volumeicon needs to be installed
-volumeicon
+#volumeicon
 
 # filesystems.packages
 btrfs-progs
@@ -52,7 +52,6 @@ lvm2
 mdadm
 mtools
 ntfs-3g
-squashfs-tools
 xfsprogs
 exfat-utils
 nfs-utils
@@ -83,7 +82,7 @@ haveged
 hwdetect
 hwinfo
 ntp
-os-prober
+#os-prober
 ckbcomp
 
 # system.packages
@@ -260,6 +259,9 @@ ttf-liberation
 ttf-bitstream-vera
 ttf-ubuntu-font-family
 noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
 ttf-croscore
 ttf-carlito
 ttf-caladea
