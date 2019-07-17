@@ -19,12 +19,6 @@ ROOTFS=${work_dir}/x86_64
 
 umask 0022
 
-# Added from Antergos build.sh. Can replace airootfs/root/customize_airootfs.sh. Run inside make_customize_airootfs function
-
-MKARCHISO_RUN() {
-    mkarchiso ${verbose} -w "${work_dir}/x86_64" -D "${install_dir}" -r "$@" run
-}
-
 _usage ()
 {
     echo "usage ${0} [options]"
@@ -109,7 +103,7 @@ make_customize_airootfs() {
 
     curl -o ${work_dir}/x86_64/airootfs/etc/pacman.d/mirrorlist 'https://www.archlinux.org/mirrorlist/?country=all&protocol=http&use_mirror_status=on'
 
-    lynx -dump -nolist 'https://wiki.archlinux.org/index.php/Installation_Guide?action=render' >> ${work_dir}/x86_64/airootfs/root/install.txt
+    #lynx -dump -nolist 'https://wiki.archlinux.org/index.php/Installation_Guide?action=render' >> ${work_dir}/x86_64/airootfs/root/install.txt
 
     $MKARCHISO ${verbose} -w "${work_dir}/x86_64" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/customize_airootfs.sh' run
 
