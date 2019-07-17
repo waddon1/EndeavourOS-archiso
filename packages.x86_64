@@ -51,7 +51,6 @@ lvm2
 mdadm
 mtools
 ntfs-3g
-squashfs-tools
 xfsprogs
 exfat-utils
 nfs-utils
@@ -259,6 +258,9 @@ ttf-liberation
 ttf-bitstream-vera
 ttf-ubuntu-font-family
 noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
 ttf-croscore
 ttf-carlito
 ttf-caladea
