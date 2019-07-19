@@ -64,16 +64,16 @@
       <property name="group-policy" type="uint" value="0"/>
     </property>
     <property name="plugin-16" type="string" value="actions">
-      <property name="appearance" type="uint" value="1"/>
+      <property name="appearance" type="uint" value="0"/>
       <property name="items" type="array">
-        <value type="string" value="+lock-screen"/>
-        <value type="string" value="+switch-user"/>
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
         <value type="string" value="-separator"/>
-        <value type="string" value="+suspend"/>
-        <value type="string" value="+hibernate"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
         <value type="string" value="-separator"/>
-        <value type="string" value="+shutdown"/>
-        <value type="string" value="+restart"/>
+        <value type="string" value="-shutdown"/>
+        <value type="string" value="-restart"/>
         <value type="string" value="-separator"/>
         <value type="string" value="+logout"/>
         <value type="string" value="-logout-dialog"/>
