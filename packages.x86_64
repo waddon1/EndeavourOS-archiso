@@ -251,6 +251,8 @@ ttf-liberation
 ttf-bitstream-vera
 ttf-ubuntu-font-family
 noto-fonts
+#asian fonts for calamares
+noto-fonts-cjk
 ttf-croscore
 ttf-carlito
 ttf-caladea
