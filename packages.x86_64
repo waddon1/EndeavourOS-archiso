@@ -25,8 +25,8 @@ xorg-server
 xorg-xinit
 
 # kernel.endeavour
-linux
-linux-headers
+# linux (base-group)
+# linux-headers (base-group)
 linux-firmware
 
 # desktop.endeavour
@@ -45,11 +45,11 @@ btrfs-progs
 dosfstools
 f2fs-tools
 lvm2
-mdadm
+#mdadm (base-group)
 mtools
 ntfs-3g
 squashfs-tools
-xfsprogs
+#xfsprogs (base-group)
 exfat-utils
 nfs-utils
 nilfs-utils
@@ -222,7 +222,7 @@ fsarchiver
 mc
 
 #crypt
-cryptsetup
+#cryptsetup (base-group)
 
 
 # others
