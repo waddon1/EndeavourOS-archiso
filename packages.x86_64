@@ -34,14 +34,11 @@ xfce4
 xfce4-goodies
 #--> needs to be at the repo first
 grub2-theme-endeavouros
+qt5ct
 
 # 06-bowser.endeavour
 firefox
-firefox-ublock-origin 
-
-# extra_stuff.endeavour
-# xfce4-alsa-pluggin (AUR) or volumeicon needs to be installed
-#volumeicon
+firefox-ublock-origin
 
 # filesystems.packages
 btrfs-progs
@@ -156,7 +153,6 @@ xf86-video-nouveau
 # nvidia.packages
 #nvidia
 #nvidia-utils
-#nvidia-libgl
 #nvidia-settings
 
 # loginmanager.packages
@@ -171,7 +167,6 @@ file-roller
 gvfs-mtp
 libwnck3
 network-manager-applet
-#pepper-flash
 transmission-gtk
 grml-zsh-config
 galculator
@@ -221,7 +216,7 @@ clonezilla
 darkhttpd
 partclone
 partimage
-lftp
+gftp
 hdparm
 fsarchiver
 mc
@@ -239,7 +234,6 @@ hwinfo
 kparts
 polkit-qt5
 python
-qt5ct
 solid
 qt5-tools
 #pythonqt
@@ -251,9 +245,7 @@ gtk-engine-murrine
 gnome-themes-extra
 elementary-icon-theme
 adwaita-icon-theme
-ttf-droid
 ttf-dejavu
-#ttf-freefont <--- replaced by:
 gnu-free-fonts
 ttf-liberation
 ttf-bitstream-vera
