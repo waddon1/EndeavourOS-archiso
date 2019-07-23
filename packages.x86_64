@@ -33,7 +33,6 @@ linux-firmware
 xfce4
 xfce4-goodies
 xfce4-pulseaudio-plugin
-#--> needs to be at the repo first
 grub2-theme-endeavouros
 qt5ct
 
@@ -46,15 +45,12 @@ btrfs-progs
 dosfstools
 f2fs-tools
 lvm2
-#mdadm (base-group)
 mtools
 ntfs-3g
 squashfs-tools
-#xfsprogs (base-group)
 exfat-utils
 nfs-utils
 nilfs-utils
-#zfs
 mlocate
 gvfs
 gvfs-afc
@@ -80,7 +76,7 @@ haveged
 hwdetect
 hwinfo
 ntp
-#os-prober
+os-prober
 ckbcomp
 
 # system.packages
@@ -169,6 +165,7 @@ gvfs-mtp
 libwnck3
 network-manager-applet
 transmission-gtk
+zsh
 grml-zsh-config
 galculator
 
@@ -176,10 +173,8 @@ galculator
 calamares_offline
 lsb-release
 libpwquality
-
 # for launcher
 yad
-
 # Main
 cmake
 qt5-svg
@@ -187,7 +182,6 @@ qt5-webengine
 yaml-cpp
 extra-cmake-modules
 boost
-
 # Modules
 ## welcome
 networkmanager
@@ -214,17 +208,12 @@ ddrescue
 dd_rescue
 testdisk
 clonezilla
-darkhttpd
 partclone
 partimage
 gftp
 hdparm
 fsarchiver
 mc
-
-#crypt
-#cryptsetup (base-group)
-
 
 # others
 qt5-xmlpatterns
@@ -251,9 +240,7 @@ gnu-free-fonts
 ttf-liberation
 ttf-bitstream-vera
 ttf-ubuntu-font-family
-noto-fonts
-#asian fonts for calamares
-noto-fonts-cjk
+cantarell-fonts
 ttf-croscore
 ttf-carlito
 ttf-caladea
@@ -262,10 +249,7 @@ terminus-font
 
 # sound
 alsa-utils
-#alsamixer
-#amixer
 alsa-plugins
-#for certain sound cards
 alsa-firmware
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -276,7 +260,6 @@ pulseaudio-jack
 htop 
 glances
 rsync
-ghex
 hardinfo
 
 # needed dependencies
