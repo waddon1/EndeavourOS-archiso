@@ -22,8 +22,9 @@ pacman -Syy
 sed -i 's~\#GRUB_THEME=.*~GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.txt~g' /etc/default/grub
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 wget https://github.com/endeavouros-team/install-scripts/raw/master/cleaner_script.sh
-chmod +x cleaner_script.sh
-mv cleaner_script.sh /usr/bin/cleaner_script.sh"
+wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_endeavouros
+chmod +x cleaner_script.sh pacstrap_endeavouros
+mv cleaner_script.sh pacstrap_endeavouros /usr/bin/"
 
 }
 
