@@ -107,20 +107,6 @@ make_customize_airootfs() {
 
     $MKARCHISO ${verbose} -w "${work_dir}/x86_64" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/customize_airootfs.sh' run
 
-
-############ START ################
-antergos_function(){
-            mkdir -p ${ROOTFS}/usr/share/glib-2.0/schemas
-            for _schema in ${script_path}/gsettings/*.gschema.override; do
-                cp ${_schema} ${ROOTFS}/usr/share/glib-2.0/schemas
-            done
-
-            # Compile GSettings XML schema files
-            MKARCHISO_RUN '/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas'
-
-}
-############ END ################
-
     rm ${work_dir}/x86_64/airootfs/root/customize_airootfs.sh
 }
 

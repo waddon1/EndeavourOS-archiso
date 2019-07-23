@@ -23,8 +23,9 @@ sed -i 's~\#GRUB_THEME=.*~GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.tx
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 wget https://github.com/endeavouros-team/install-scripts/raw/master/cleaner_script.sh
 wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_endeavouros
-chmod +x cleaner_script.sh pacstrap_endeavouros
-mv cleaner_script.sh pacstrap_endeavouros /usr/bin/"
+wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_switcher
+chmod +x cleaner_script.sh pacstrap_endeavouros calamares_switcher
+mv cleaner_script.sh pacstrap_endeavouros calamares_switcher /usr/bin/"
 
 }
 
