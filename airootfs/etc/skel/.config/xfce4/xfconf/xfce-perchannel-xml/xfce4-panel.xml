@@ -47,10 +47,10 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="networkmanager applet"/>
+        <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="thunar"/>
         <value type="string" value="netzwerk-manager-applet"/>
         <value type="string" value="kalu"/>
-        <value type="string" value="pamac-tray"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
     </property>
