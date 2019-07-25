@@ -1,7 +1,7 @@
 favorites=firefox.desktop,xfce4-terminal.desktop,org.xfce.Parole.desktop,Thunar.desktop,xfce-settings-manager.desktop
 recent=
 button-title=EndeavourOS
-button-icon=/usr/share/endeavouros/EndeavourOS-icon.png
+button-icon=/usr/share/endeavouros/EndeavourOS-E-icon.png
 button-single-row=false
 show-button-title=true
 show-button-icon=true
