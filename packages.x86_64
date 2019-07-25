@@ -22,6 +22,7 @@ endeavouros-mirrorlist
 xf86-video-vesa
 xorg-server
 xorg-xinit
+xorg-xkill
 
 # kernel.endeavour
 # linux (base-group)
