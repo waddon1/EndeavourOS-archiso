@@ -24,7 +24,6 @@ MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=TRUE
 MiscNewTabAdjacent=FALSE
-FontName=xos4 Terminus 10
 BackgroundDarkness=0.800000
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
