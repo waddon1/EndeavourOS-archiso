@@ -1,5 +1,5 @@
 favorites=firefox.desktop,xfce4-terminal.desktop,org.xfce.Parole.desktop,Thunar.desktop,xfce-settings-manager.desktop
-recent=xfce-settings-manager.desktop,xfce4-settings-editor.desktop,mousepad.desktop,xfce4-sensors.desktop,exo-mail-reader.desktop,xfce4-terminal.desktop
+recent=
 button-title=EndeavourOS
 button-icon=/usr/share/endeavouros/EndeavourOS-icon.png
 button-single-row=false
@@ -14,8 +14,8 @@ category-show-name=true
 category-icon-size=1
 load-hierarchy=false
 recent-items-max=10
-favorites-in-recent=false
-display-recent-default=true
+favorites-in-recent=true
+display-recent-default=false
 position-search-alternate=true
 position-commands-alternate=true
 position-categories-alternate=true
