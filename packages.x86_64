@@ -38,7 +38,7 @@ qt5ct
 
 # 06-bowser.endeavour
 firefox
-firefox-ublock-origin
+#firefox-ublock-origin
 
 # filesystems.packages
 btrfs-progs
