@@ -69,7 +69,7 @@ dmraid
 efibootmgr
 efitools
 fakeroot
-gparted
+#gparted
 gptfdisk
 grub
 haveged
