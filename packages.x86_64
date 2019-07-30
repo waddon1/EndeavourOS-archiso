@@ -190,6 +190,7 @@ upower
 ## partition
 #kde partition manager
 partitionmanager
+gnome-icon-theme
 kcoreaddons
 kconfig
 ki18n
