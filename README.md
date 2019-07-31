@@ -34,7 +34,9 @@ If you added the old endeavour repo, please uninstall
 OBS: Do in this order!
 
 
-install keyring package:\
+install keyring package:
+
+
 *bellow is an example, you may need to change to the latest package version. Please check https://github.com/endeavouros-team/mirrors/releases/tag/mirror2
 
  `wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
@@ -56,7 +58,8 @@ If you want to add the developer repo add to your /etc/pacman.conf
 
 `[endeavouros_developer]`\
 `SigLevel = PackageRequired`\
-`Server = https://github.com/endeavouros-team/mirrors/releases/download/mirror3-developer/`\
+`Server = https://github.com/endeavouros-team/mirrors/releases/download/mirror3-developer/`
+
 
 * Uses the same signature that normal repo and has no mirrors package to install.
 
