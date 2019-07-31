@@ -35,7 +35,7 @@ OBS: Do in this order!
 
 
 install keyring package:\
-*bellow is an example, you may need to change to the laest package version. Please check https://github.com/endeavouros-team/mirrors/releases/tag/mirror2
+*bellow is an example, you may need to change to the latest package version. Please check https://github.com/endeavouros-team/mirrors/releases/tag/mirror2
 
  `wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
 
