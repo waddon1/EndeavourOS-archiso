@@ -175,6 +175,7 @@ lsb-release
 libpwquality
 # for launcher
 yad
+gspell
 # Main
 cmake
 qt5-svg
