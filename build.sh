@@ -53,6 +53,11 @@ run_once() {
     fi
 }
 
+bypass_umount_error(){
+
+umount -l $script_path/work/x86_64/airootfs/proc $script_path/work/x86_64/airootfs/dev || true
+
+}
 # Setup custom pacman.conf with current cache directories.
 make_pacman_conf() {
     local _cache_dirs
@@ -84,6 +89,13 @@ make_setup_mkinitcpio() {
     cp /usr/lib/initcpio/install/archiso_kms ${work_dir}/x86_64/airootfs/etc/initcpio/install
     cp /usr/lib/initcpio/archiso_shutdown ${work_dir}/x86_64/airootfs/etc/initcpio
     cp ${script_path}/mkinitcpio.conf ${work_dir}/x86_64/airootfs/etc/mkinitcpio-archiso.conf
+
+    # error when chrooting, mounted paths already
+    # try commenting some lines
+    bypass_umount_error
+    $MKARCHISO ${verbose} -w "${work_dir}/x86_64" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r 'mkinitcpio -c /etc/mkinitcpio-archiso.conf -k /boot/vmlinuz-linux -g /boot/archiso.img' run
+
+comment_ignore(){
     gnupg_fd=
     if [[ ${gpg_key} ]]; then
       gpg --export ${gpg_key} >${work_dir}/gpgkey
@@ -93,6 +105,8 @@ make_setup_mkinitcpio() {
     if [[ ${gpg_key} ]]; then
       exec 17<&-
     fi
+}
+
 }
 
 # Customize installation (airootfs)

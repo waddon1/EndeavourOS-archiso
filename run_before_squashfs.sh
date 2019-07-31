@@ -25,7 +25,11 @@ wget https://github.com/endeavouros-team/install-scripts/raw/master/cleaner_scri
 wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_endeavouros
 wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_switcher
 chmod +x cleaner_script.sh pacstrap_endeavouros calamares_switcher
-mv cleaner_script.sh pacstrap_endeavouros calamares_switcher /usr/bin/"
+mv cleaner_script.sh pacstrap_endeavouros calamares_switcher /usr/bin/
+wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/mousepad.dconf
+dbus-launch dconf load / < mousepad.dconf
+sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
+rm mousepad.dconf"
 
 }
 
