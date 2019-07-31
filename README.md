@@ -35,8 +35,9 @@ OBS: Do in this order!
 
 
 install keyring package:
+*bellow is an example, you may need to change to the laest package version. Please check https://github.com/endeavouros-team/mirrors/releases/tag/mirror2
 
- wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
+ `wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
 
 `wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-mirrorlist-1-2-any.pkg.tar.xz`
 
@@ -49,6 +50,13 @@ add the repo bellow to your /etc/pacman.conf
 `[endeavouros]`\
 `SigLevel = PackageRequired`\
 `Include = /etc/pacman.d/endeavouros-mirrorlist`
+
+If you want to add the developer repo add to your /etc/pacman.conf
+`[endeavouros_developer]`
+`SigLevel = PackageRequired`
+`Server = https://github.com/endeavouros-team/mirrors/releases/download/mirror3-developer/`
+
+* Uses the same signature that normal repo and has no mirrors package to install.
 
 
 `sudo pacman -Syy`
