@@ -29,7 +29,9 @@ mv cleaner_script.sh pacstrap_endeavouros calamares_switcher /usr/bin/
 wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/mousepad.dconf
 dbus-launch dconf load / < mousepad.dconf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
-rm mousepad.dconf"
+rm mousepad.dconf
+find /root -type d -exec chmod -R 755 {} \;
+chown root:root -R /root"
 
 }
 
