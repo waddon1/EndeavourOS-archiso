@@ -1,5 +1,5 @@
 These are the basic needed files and folders to build EndeavourOS system.
-# add and enable endeavour Repository at your system
+## Add and enable endeavour Repository at your system
 
 If you added the old endeavour repo, please uninstall
 
@@ -42,7 +42,7 @@ If you want to add the developer repo add to your /etc/pacman.conf
 
 `sudo pacman -Syy`
 
-# Install necessary packages
+## Install necessary packages
 `sudo pacman -S archiso arch-install-scripts git --needed`
 
 Clone:\
@@ -50,13 +50,13 @@ Clone:\
 
 `cd archiso-offlineinstaller`
 
-# Run fix permissions script
+## Run fix permissions script
 `sudo ./fix_permissions.sh`
 
-# Build
+## Build
 `sudo ./build.sh -v`
 
-# The iso appears at out folder
+## The iso appears at out folder
 
 Uses archiso from archlinux as base.
 
