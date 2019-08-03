@@ -1,29 +1,5 @@
 These are the basic needed files and folders to build EndeavourOS system.
-
-# Install necessary packages first
-`sudo pacman -S archiso arch-install-scripts git --needed`
-
-Clone:\
-`git clone https://github.com/endeavouros-team/archiso-offlineinstaller.git`
-
-`cd archiso-offlineinstaller`
-
-# Run fix permissions script
-`sudo ./fix_permissions.sh`
-
-# Build
-`sudo ./build.sh -v`
-
-# The iso appears at out folder
-
-Uses archiso from archlinux as base.
-
-xfce4 as live environment
-Basic tools for a livecd
-Installer
-
-*
-you will need to add and enable endeavour Repository at your system
+# add and enable endeavour Repository at your system
 
 If you added the old endeavour repo, please uninstall
 
@@ -39,7 +15,7 @@ install keyring package:
 
 *bellow is an example, you may need to change to the latest package version. Please check https://github.com/endeavouros-team/mirrors/releases/tag/mirror2
 
- `wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
+`wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
 
 `wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-mirrorlist-1-2-any.pkg.tar.xz`
 
@@ -65,5 +41,28 @@ If you want to add the developer repo add to your /etc/pacman.conf
 
 
 `sudo pacman -Syy`
+
+# Install necessary packages
+`sudo pacman -S archiso arch-install-scripts git --needed`
+
+Clone:\
+`git clone https://github.com/endeavouros-team/archiso-offlineinstaller.git`
+
+`cd archiso-offlineinstaller`
+
+# Run fix permissions script
+`sudo ./fix_permissions.sh`
+
+# Build
+`sudo ./build.sh -v`
+
+# The iso appears at out folder
+
+Uses archiso from archlinux as base.
+
+xfce4 as live environment
+Basic tools for a livecd
+Installer
+
 
 ![LiveISO Screenshot](https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/master/ISO-Shot.png "LiveISO Screenshot")
