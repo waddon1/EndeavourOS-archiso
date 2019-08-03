@@ -15,13 +15,13 @@ install keyring package:
 
 *bellow is an example, you may need to change to the latest package version. Please check https://github.com/endeavouros-team/mirrors/releases/tag/mirror2
 
-`wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-keyring-1-1-any.pkg.tar.xz`
+`wget https://github.com/endeavouros-team/mirrors/releases/download/mirror2/endeavouros-keyring-1-4-any.pkg.tar.xz`
 
-`wget https://github.com/endeavouros-team/repository/releases/download/repository/endeavouros-mirrorlist-1-2-any.pkg.tar.xz`
+`wget https://github.com/endeavouros-team/mirrors/releases/download/mirror2/endeavouros-mirrorlist-1-6-any.pkg.tar.xz`
 
-`sudo pacman -U endeavouros-keyring-1-1-any.pkg.tar.xz`
+`sudo pacman -U endeavouros-keyring-1-4-any.pkg.tar.xz`
 
-`sudo pacman -U endeavouros-mirrorlist-1-2-any.pkg.tar.xz`
+`sudo pacman -U endeavouros-mirrorlist-1-6-any.pkg.tar.xz`
 
 add the repo bellow to your /etc/pacman.conf
 
