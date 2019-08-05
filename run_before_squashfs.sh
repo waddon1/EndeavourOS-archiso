@@ -18,8 +18,9 @@ pacman-key --add /usr/share/pacman/keyrings/endeavouros.gpg && sudo pacman-key -
 pacman-key --populate
 pacman-key --refresh-keys
 pacman -Syy
-#sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavouros\/splash.png~g' /etc/default/grub
-sed -i 's~\#GRUB_THEME=.*~GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.txt~g' /etc/default/grub
+sed -i 's?GRUB_DISTRIBUTOR=.*?GRUB_THEME=?' /etc/default/grub
+sed -i 's?GRUB_DISTRIBUTOR=?GRUB_DISTRIBUTOR=\"EndeavourOS\"?' /etc/default/grub
+sed -i 's?\#GRUB_THEME=.*?GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.txt?g' /etc/default/grub
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 wget https://github.com/endeavouros-team/install-scripts/raw/master/cleaner_script.sh
 wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_endeavouros
@@ -40,3 +41,5 @@ chown root:root -R /root"
 #################################
 
 do_merge
+
+#sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavouros\/splash.png~g' /etc/default/grub

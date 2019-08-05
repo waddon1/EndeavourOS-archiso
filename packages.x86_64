@@ -69,7 +69,6 @@ dmraid
 efibootmgr
 efitools
 fakeroot
-#gparted
 gptfdisk
 grub
 haveged
@@ -190,8 +189,8 @@ upower
 
 ## partition
 #kde partition manager
-partitionmanager
-gnome-icon-theme
+#partitionmanager
+#gnome-icon-theme
 kcoreaddons
 kconfig
 ki18n

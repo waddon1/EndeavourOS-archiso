@@ -6,7 +6,7 @@ find ./airootfs -type d -exec chmod -R 755 {} \;
 #find ./airootfs -type d -exec chown root:root {} \;
 chown root:root $(find ./airootfs |grep -v "/etc/skel")
 
-chmod 700 ./airootfs/root
+chmod 755 ./airootfs/root
 chmod -R 755 airootfs/etc/sudoers.d
 chmod 755 ./airootfs/etc/sudoers.d
 chmod 755 ./airootfs/root
