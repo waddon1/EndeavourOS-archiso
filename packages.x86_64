@@ -95,8 +95,8 @@ gpm
 # network.packages
 #b43-firmware
 b43-fwcutter
-#broadcom-wl-dkms
-broadcom-wl
+broadcom-wl-dkms
+#broadcom-wl
 dnsutils
 intel-ucode
 ipw2100-fw
