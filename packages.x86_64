@@ -159,6 +159,7 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
 # desktop.packages
+leafpad
 dconf-editor
 file-roller
 gvfs-mtp
