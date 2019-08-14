@@ -5,11 +5,7 @@
     <property name="known_applications" type="array">
       <value type="string" value="kalu"/>
       <value type="string" value="nm-applet"/>
-      <value type="string" value="notify-send"/>
+      <value type="string" value="xfce4-settings-helper"/>
     </property>
   </property>
-  <property name="primary-monitor" type="uint" value="0"/>
-  <property name="notify-location" type="uint" value="2"/>
-  <property name="log-level" type="uint" value="0"/>
-  <property name="log-level-apps" type="uint" value="0"/>
 </channel>
