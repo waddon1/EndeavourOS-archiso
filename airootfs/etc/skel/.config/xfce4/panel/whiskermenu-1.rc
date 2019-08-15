@@ -1,7 +1,7 @@
-favorites=firefox.desktop,xfce4-terminal.desktop,org.xfce.Parole.desktop,Thunar.desktop,xfce-settings-manager.desktop
+favorites=exo-terminal-emulator.desktop,firefox.desktop,xfce-settings-manager.desktop,ristretto.desktop,org.xfce.Parole.desktop,pavucontrol.desktop,xfce4-taskmanager.desktop,Thunar.desktop
 recent=
 button-title=EndeavourOS
-button-icon=/usr/share/endeavouros/EndeavourOS-icon-E.png
+button-icon=/usr/share/endeavouros/EndeavourOS-icon.png
 button-single-row=false
 show-button-title=true
 show-button-icon=true
@@ -9,11 +9,11 @@ launcher-show-name=true
 launcher-show-description=true
 launcher-show-tooltip=true
 item-icon-size=2
-hover-switch-category=true
+hover-switch-category=false
 category-show-name=true
 category-icon-size=1
 load-hierarchy=false
-recent-items-max=10
+recent-items-max=5
 favorites-in-recent=true
 display-recent-default=false
 position-search-alternate=true
@@ -21,8 +21,8 @@ position-commands-alternate=true
 position-categories-alternate=true
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=505
-menu-height=431
+menu-width=592
+menu-height=428
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true
@@ -55,7 +55,7 @@ command=exo-open --launch TerminalEmulator man %s
 regex=false
 
 [action1]
-name=Web Search
+name=Search Internet
 pattern=?
 command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
 regex=false
@@ -67,13 +67,13 @@ command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
 regex=false
 
 [action3]
-name=Run in Terminal
+name=Open In Terminal
 pattern=!
 command=exo-open --launch TerminalEmulator %s
 regex=false
 
 [action4]
-name=Open URI
+name=Open URL
 pattern=^(file|http|https):\\/\\/(.*)$
 command=exo-open \\0
 regex=true

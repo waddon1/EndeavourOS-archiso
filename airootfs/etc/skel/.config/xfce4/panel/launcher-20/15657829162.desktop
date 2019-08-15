@@ -2,8 +2,11 @@
 Version=1.0
 Name=Firefox
 GenericName=Web Browser
+GenericName[de]=Webbrowser
 Comment=Browse the World Wide Web
+Comment[de]=Im Internet surfen
 Keywords=Internet;WWW;Browser;Web;Explorer
+Keywords[de]=Internet;WWW;Browser;Web;Explorer;Webseite;Site;surfen;online;browsen
 Exec=/usr/lib/firefox/firefox %u
 Icon=applications-internet
 Terminal=false
@@ -11,7 +14,7 @@ X-MultipleArgs=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;
 StartupNotify=true
-StartupWMClass=Firefox
+StartupWMClass=firefox
 Categories=Network;WebBrowser;
 Actions=new-window;new-private-window;
 X-XFCE-Source=file:///usr/share/applications/firefox.desktop
@@ -20,10 +23,10 @@ Path=
 
 [Desktop Action new-window]
 Name=New Window
-Name[en_US]=New Window
+Name[de]=Neues Fenster
 Exec=/usr/lib/firefox/firefox --new-window %u
 
 [Desktop Action new-private-window]
 Name=New Private Window
-Name[en_US]=New Private Window
+Name[de]=Neues privates Fenster
 Exec=/usr/lib/firefox/firefox --private-window %u
