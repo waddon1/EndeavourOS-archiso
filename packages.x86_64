@@ -269,6 +269,7 @@ htop
 glances
 rsync
 hardinfo
+bash-completion
 
 # needed dependencies
 pavucontrol
