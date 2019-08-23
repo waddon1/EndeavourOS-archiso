@@ -25,8 +25,9 @@ echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 wget https://github.com/endeavouros-team/install-scripts/raw/master/cleaner_script.sh
 wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_endeavouros
 wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_switcher
-chmod +x cleaner_script.sh pacstrap_endeavouros calamares_switcher
-mv cleaner_script.sh pacstrap_endeavouros calamares_switcher /usr/bin/
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/update-mirrorlist
+chmod +x cleaner_script.sh pacstrap_endeavouros calamares_switcher update-mirrorlist
+mv cleaner_script.sh pacstrap_endeavouros calamares_switcher update-mirrorlist /usr/bin/
 wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/mousepad.dconf
 dbus-launch dconf load / < mousepad.dconf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
