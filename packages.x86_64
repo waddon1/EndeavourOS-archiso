@@ -27,6 +27,8 @@ xorg-xkill
 # kernel.endeavour
 # linux (base-group)
 # linux-headers (base-group)
+dkms
+linux-headers
 linux-firmware
 
 # desktop.endeavour
