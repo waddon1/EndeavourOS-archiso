@@ -173,7 +173,8 @@ grml-zsh-config
 galculator
 
 # calamares.endeavour
-calamares_current
+#calamares_current
+calamares_offline
 lsb-release
 libpwquality
 # for launcher
