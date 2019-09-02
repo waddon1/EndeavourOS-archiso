@@ -18,7 +18,7 @@ pacman-key --add /usr/share/pacman/keyrings/endeavouros.gpg && sudo pacman-key -
 pacman-key --populate
 pacman-key --refresh-keys
 pacman -Syy
-sed -i 's?GRUB_DISTRIBUTOR=.*?GRUB_THEME=?' /etc/default/grub
+sed -i 's?GRUB_THEME=.*?GRUB_THEME=?' /etc/default/grub
 sed -i 's?GRUB_DISTRIBUTOR=?GRUB_DISTRIBUTOR=\"EndeavourOS\"?' /etc/default/grub
 sed -i 's?\#GRUB_THEME=.*?GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.txt?g' /etc/default/grub
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
