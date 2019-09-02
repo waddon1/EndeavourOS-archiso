@@ -1,6 +1,5 @@
 base
 base-devel
-linux-headers
 
 # communication
 irssi
@@ -24,6 +23,19 @@ xf86-video-vesa
 xorg-server
 xorg-xinit
 xorg-xkill
+mesa
+xf86-input-libinput
+xf86-input-synaptics
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-vesa
+xorg-server
+xf86-video-nouveau
+#nvidia
+#nvidia-utils
+#nvidia-settings
 
 # kernel.endeavour
 # linux (base-group)
@@ -136,25 +148,6 @@ pptpclient
 vpnc
 xl2tpd
 
-# xorg.packages
-mesa
-xf86-input-libinput
-xf86-input-synaptics
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-fbdev
-xf86-video-intel
-xf86-video-vesa
-xorg-server
-
-# nouveau.packages
-xf86-video-nouveau
-
-# nvidia.packages
-#nvidia
-#nvidia-utils
-#nvidia-settings
-
 # loginmanager.packages
 #light-locker
 #light-locker-settings
@@ -243,7 +236,7 @@ gnome-themes-extra
 elementary-icon-theme
 adwaita-icon-theme
 ttf-dejavu
-gnu-free-fonts
+#gnu-free-fonts
 ttf-liberation
 ttf-bitstream-vera
 ttf-ubuntu-font-family
@@ -251,13 +244,12 @@ cantarell-fonts
 ttf-croscore
 ttf-carlito
 ttf-caladea
-terminus-font
+#terminus-font
 noto-fonts
 noto-fonts-cjk
 opendesktop-fonts
 ttf-liberation
 ttf-opensans
-
 
 # sound
 alsa-utils
