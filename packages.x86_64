@@ -1,17 +1,18 @@
+#default.groups.packages
 base
 base-devel
 
-# communication
+# communication.packages
 irssi
 
-# hardware support
+# hardware-support.packages
 lsscsi
 sdparm
 sg3_utils
 smartmontools
 usb_modeswitch
 
-# EFI/UEFI
+# EFI/UEFI.packages
 refind-efi
 
 # keyring_mirros.endeavour
@@ -39,12 +40,19 @@ xf86-video-nouveau
 
 # kernel.endeavour
 # linux (base-group)
-# linux-headers (base-group)
-dkms
+# linux-headers (not anymore in base-group, needs explicit install)
 linux-headers
+dkms
+#linux-firmware (base-group ? )
 linux-firmware
 
-# desktop.endeavour
+# loginmanager.packages
+#light-locker
+#light-locker-settings
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+
+# default.desktop.endeavouros
 xfce4
 xfce4-goodies
 xfce4-pulseaudio-plugin
@@ -52,9 +60,44 @@ grub2-theme-endeavouros
 qt5ct
 screenfetch
 
-# bowser.endeavour
+# extra.desktop.packages
+leafpad
+dconf-editor
+file-roller
+gvfs-mtp
+libwnck3
+network-manager-applet
+transmission-gtk
+zsh
+grml-zsh-config
+galculator
+
+# default.bowser.endeavour
 firefox
-#firefox-ublock-origin
+#firefox-ublock-origin (may adding to netinstall "security" group)
+ 
+# theme.endeavouros
+arc-icon-theme
+arc-gtk-theme
+gtk-engine-murrine
+gnome-themes-extra
+elementary-icon-theme
+adwaita-icon-theme
+ttf-dejavu
+#gnu-free-fonts (unneded)
+ttf-liberation
+ttf-bitstream-vera
+ttf-ubuntu-font-family
+cantarell-fonts
+ttf-croscore
+ttf-carlito
+ttf-caladea
+#terminus-font (bitmap fonts not working with pango)
+noto-fonts
+noto-fonts-cjk
+opendesktop-fonts
+ttf-liberation
+ttf-opensans
 
 # filesystems.packages
 btrfs-progs
@@ -97,7 +140,6 @@ ckbcomp
 # system.packages
 expect
 git
-#pamac
 pkgfile
 reflector
 tlp
@@ -148,45 +190,27 @@ pptpclient
 vpnc
 xl2tpd
 
-# loginmanager.packages
-#light-locker
-#light-locker-settings
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-
-# desktop.packages
-leafpad
-dconf-editor
-file-roller
-gvfs-mtp
-libwnck3
-network-manager-applet
-transmission-gtk
-zsh
-grml-zsh-config
-galculator
-
 # calamares.endeavour
 calamares_current
 #calamares_offline
+# calamares.dependencies
 lsb-release
 libpwquality
-# for launcher
-yad
-gspell
-# Main
 cmake
 qt5-svg
 qt5-webengine
 yaml-cpp
 extra-cmake-modules
 boost
-# Modules
-## welcome
+
+# calamares.modules
+#dependencies for installer modules
+
+# calamares.welcome
 networkmanager
 upower
 
-## partition
+# calamares.partition
 #kde partition manager
 #partitionmanager
 #gnome-icon-theme
@@ -199,23 +223,10 @@ kpmcore
 parted
 gparted
 
-## unpackfs
+# calamares.unpackfs
 squashfs-tools
 
-# rescue-tools
-grsync
-ddrescue
-dd_rescue
-testdisk
-clonezilla
-partclone
-partimage
-gftp
-hdparm
-fsarchiver
-mc
-
-# others
+# calamares.others
 qt5-xmlpatterns
 doxygen
 tcpdump
@@ -228,30 +239,24 @@ solid
 qt5-tools
 #pythonqt
 
-# theme
-arc-icon-theme
-arc-gtk-theme
-gtk-engine-murrine
-gnome-themes-extra
-elementary-icon-theme
-adwaita-icon-theme
-ttf-dejavu
-#gnu-free-fonts
-ttf-liberation
-ttf-bitstream-vera
-ttf-ubuntu-font-family
-cantarell-fonts
-ttf-croscore
-ttf-carlito
-ttf-caladea
-#terminus-font
-noto-fonts
-noto-fonts-cjk
-opendesktop-fonts
-ttf-liberation
-ttf-opensans
+# endeavouros.launcher
+yad
+gspell
 
-# sound
+# liveiso.rescue-tools
+grsync
+ddrescue
+dd_rescue
+testdisk
+clonezilla
+partclone
+partimage
+gftp
+hdparm
+fsarchiver
+mc
+
+# endeavouros.sound
 alsa-utils
 alsa-plugins
 alsa-firmware
@@ -260,14 +265,14 @@ pulseaudio-bluetooth
 pulseaudio-equalizer
 pulseaudio-jack
 
-# developers wishes
+# developers.wishes
 htop 
 glances
 rsync
 hardinfo
 bash-completion
 
-# needed dependencies
+# needed.dependencies
 pavucontrol
 ffmpegthumbnailer
 poppler-glib
@@ -284,5 +289,6 @@ kalu
 # AUR-support 
 yay
 
+#virtualbox.packages
 virtualbox-guest-utils
 virtualbox-guest-modules-arch
