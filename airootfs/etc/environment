@@ -4,6 +4,6 @@
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
-XDG_CONFIG_DIRS="/etc/skel/.config/xfce4"
+#XDG_CONFIG_DIRS="/etc/skel/.config/xfce4"
 QT_QPA_PLATFORMTHEME=qt5ct
 BROWSER=firefox
