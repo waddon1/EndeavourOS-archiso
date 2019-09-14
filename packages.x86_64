@@ -78,11 +78,11 @@ firefox
 #firefox-ublock-origin (may adding to netinstall "security" group)
  
 # theme.endeavouros
-arc-icon-theme
+arc-x-icons-theme
 arc-gtk-theme
 gtk-engine-murrine
 gnome-themes-extra
-elementary-icon-theme
+#elementary-icon-theme
 adwaita-icon-theme
 ttf-dejavu
 #gnu-free-fonts (unneded)
