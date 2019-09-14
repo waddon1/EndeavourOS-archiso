@@ -243,6 +243,7 @@ qt5-tools
 # endeavouros.launcher
 yad
 gspell
+welcome
 
 # liveiso.rescue-tools
 grsync
