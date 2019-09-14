@@ -1,12 +1,9 @@
 [Desktop Entry]
 Name=Thunar File Manager
-Name[de]=Thunar-Dateiverwaltung
 Comment=Browse the filesystem with the file manager
-Comment[de]=Das Dateisystem in der Dateiverwaltung anzeigen
 GenericName=File Manager
-GenericName[de]=Dateiverwaltung
 Exec=thunar %F
-Icon=folder
+Icon=folder-blue
 Terminal=false
 StartupNotify=true
 Type=Application

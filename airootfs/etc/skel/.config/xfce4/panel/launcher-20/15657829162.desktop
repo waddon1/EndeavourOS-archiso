@@ -2,13 +2,10 @@
 Version=1.0
 Name=Firefox
 GenericName=Web Browser
-GenericName[de]=Webbrowser
 Comment=Browse the World Wide Web
-Comment[de]=Im Internet surfen
 Keywords=Internet;WWW;Browser;Web;Explorer
-Keywords[de]=Internet;WWW;Browser;Web;Explorer;Webseite;Site;surfen;online;browsen
 Exec=/usr/lib/firefox/firefox %u
-Icon=applications-internet
+Icon=firefox-nightly
 Terminal=false
 X-MultipleArgs=false
 Type=Application
@@ -23,10 +20,8 @@ Path=
 
 [Desktop Action new-window]
 Name=New Window
-Name[de]=Neues Fenster
 Exec=/usr/lib/firefox/firefox --new-window %u
 
 [Desktop Action new-private-window]
 Name=New Private Window
-Name[de]=Neues privates Fenster
 Exec=/usr/lib/firefox/firefox --private-window %u
