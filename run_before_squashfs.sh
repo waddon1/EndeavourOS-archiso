@@ -37,7 +37,7 @@ chown root:root -R /etc/skel
 rm -f /usr/share/backgrounds/xfce/xfce-{blue,stripes,teal}.jpg
 ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-blue.jpg
 ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-teal.jpg
-ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png  # why png?
+ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png"  # why png?
 }
 
 #################################
