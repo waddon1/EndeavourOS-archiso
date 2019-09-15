@@ -32,7 +32,9 @@ dbus-launch dconf load / < mousepad.dconf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
 rm mousepad.dconf
 find /root -type d -exec chmod -R 755 {} \;
-chown root:root -R /root"
+chown root:root -R /root
+chown root:root -R /etc/skel
+chown root:root -R /usr/share/backgrounds/xfce"
 
 }
 
