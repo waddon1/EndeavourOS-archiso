@@ -31,7 +31,7 @@ wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-setting
 dbus-launch dconf load / < mousepad.dconf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
 rm mousepad.dconf
-find /root -type d -exec chmod -R 755 {} \;
+chmod -R 750 /root
 chown root:root -R /root
 chown root:root -R /etc/skel
 rm -f /usr/share/backgrounds/xfce/xfce-{blue,stripes,teal}.{jpg,png}
