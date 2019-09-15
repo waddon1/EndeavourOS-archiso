@@ -34,8 +34,10 @@ rm mousepad.dconf
 find /root -type d -exec chmod -R 755 {} \;
 chown root:root -R /root
 chown root:root -R /etc/skel
-chown root:root -R /usr/share/backgrounds/xfce"
-
+rm -f /usr/share/backgrounds/xfce/xfce-{blue,stripes,teal}.jpg
+ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-blue.jpg
+ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-teal.jpg
+ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png  # why png?
 }
 
 #################################
