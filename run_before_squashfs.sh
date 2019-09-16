@@ -31,13 +31,12 @@ wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-setting
 dbus-launch dconf load / < mousepad.dconf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
 rm mousepad.dconf
-chmod -R 750 /root
+chmod -R 700 /root
 chown root:root -R /root
 chown root:root -R /etc/skel
-rm -f /usr/share/backgrounds/xfce/xfce-{blue,stripes,teal}.{jpg,png}
-ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-blue.jpg
-ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-teal.jpg
-ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png"  # why png?
+chmod 644 /usr/share/endeavouros/*.png
+rm -rf /usr/share/backgrounds/xfce/xfce-stripes.png
+ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png"
 }
 
 #################################
@@ -45,5 +44,3 @@ ln -s /usr/share/endeavouros/endeavouros-wallpaper.png /usr/share/backgrounds/xf
 #################################
 
 do_merge
-
-#sed -i 's~\#GRUB_BACKGROUND=.*~GRUB_BACKGROUND=\/usr\/share\/endeavouros\/splash.png~g' /etc/default/grub
