@@ -69,8 +69,8 @@ gvfs-mtp
 libwnck3
 network-manager-applet
 transmission-gtk
-zsh
-grml-zsh-config
+#zsh
+#grml-zsh-config
 galculator
 
 # default.bowser.endeavour
