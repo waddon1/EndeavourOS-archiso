@@ -1,4 +1,7 @@
 These are the basic needed files and folders to build EndeavourOS system.
+
+[![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)]()
+
 ## Add and enable endeavour Repository at your system
 
 If you added the old endeavour repo, please uninstall
