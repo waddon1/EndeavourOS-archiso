@@ -285,6 +285,7 @@ freetype2
 gst-libav
 gst-plugins-bad
 gst-plugins-ugly
+gpart
 
 # package.notification
 kalu
