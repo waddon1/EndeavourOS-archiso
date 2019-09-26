@@ -31,8 +31,8 @@ xf86-video-amdgpu
 xf86-video-ati
 xf86-video-fbdev
 xf86-video-intel
-xf86-video-vesa
-xorg-server
+#xf86-video-vesa (duplicate)
+#xorg-server (duplicate)
 #xf86-video-nouveau
 nvidia-installer-dkms
 #nvidia
@@ -65,7 +65,7 @@ screenfetch
 leafpad
 dconf-editor
 file-roller
-gvfs-mtp
+#gvfs-mtp (duplicate)
 libwnck3
 network-manager-applet
 transmission-gtk
@@ -98,7 +98,7 @@ ttf-caladea
 noto-fonts
 noto-fonts-cjk
 opendesktop-fonts
-ttf-liberation
+#ttf-liberation (duplicate)
 ttf-opensans
 
 # filesystems.packages
@@ -108,7 +108,7 @@ f2fs-tools
 lvm2
 mtools
 ntfs-3g
-squashfs-tools
+#squashfs-tools (duplicate)
 exfat-utils
 nfs-utils
 nilfs-utils
@@ -167,7 +167,7 @@ net-tools
 networkmanager
 networkmanager-openvpn
 nss-mdns
-usb_modeswitch
+#usb_modeswitch (duplicate)
 whois
 wireless_tools
 dhclient
@@ -179,7 +179,7 @@ openssh
 openvpn
 rp-pppoe
 wireless-regdb
-wireless_tools
+#wireless_tools (duplicate)
 wpa_supplicant
 wvdial
 gnu-netcat
@@ -208,7 +208,7 @@ boost
 #dependencies for installer modules
 
 # calamares.welcome
-networkmanager
+#networkmanager (duplicate)
 upower
 
 # calamares.partition
@@ -232,7 +232,7 @@ qt5-xmlpatterns
 doxygen
 tcpdump
 dmidecode
-hwinfo
+#hwinfo (duplicate)
 kparts
 polkit-qt5
 python
