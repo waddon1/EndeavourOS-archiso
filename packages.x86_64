@@ -285,8 +285,8 @@ kalu
 yay
 
 #virtualbox.packages
-virtualbox-guest-utils
 virtualbox-guest-modules-arch
+virtualbox-guest-utils
 
 #screen tearing
 xcompmgr
