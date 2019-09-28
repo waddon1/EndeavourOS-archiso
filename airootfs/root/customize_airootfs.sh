@@ -45,5 +45,5 @@ sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
-systemctl enable NetworkManager.service vboxservice.service
+systemctl enable NetworkManager.service vboxservice.service compton.service
 systemctl set-default multi-user.target

@@ -287,3 +287,6 @@ yay
 #virtualbox.packages
 virtualbox-guest-utils
 virtualbox-guest-modules-arch
+
+#screen tearing
+xcompmgr
