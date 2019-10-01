@@ -11,6 +11,6 @@ chmod -R 700 airootfs/etc/sudoers.d
 chmod 444 ./airootfs/etc/sudoers.d/g_wheel
 #chown root:root ./airootfs/etc/sudoers.d
 #chown root:root ./airootfs/etc/sudoers.d/g_wheel
-chmod +x ./{build.sh,mkarchiso,run_before_squashfs.sh,inject_repo.sh}
+chmod +x ./{build.sh,mkarchiso,run_before_squashfs.sh}
 
 
