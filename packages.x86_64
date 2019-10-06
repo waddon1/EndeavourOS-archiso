@@ -1,5 +1,6 @@
 #default.groups.packages
-base # now is a meta package
+# now is a meta package
+base
 base-devel
 
 # adding old base packages
