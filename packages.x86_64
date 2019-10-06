@@ -1,6 +1,35 @@
 #default.groups.packages
-base
+base # now is a meta package
 base-devel
+
+# adding old base packages
+cryptsetup
+device-mapper
+dhcpcd
+diffutils
+e2fsprogs
+inetutils
+jfsutils
+less
+linux
+linux-firmware
+logrotate
+lvm2
+man-db
+man-pages
+mdadm
+nano
+netctl
+perl
+reiserfsprogs
+s-nail
+sysfsutils
+systemd-sysvcompat
+texinfo
+usbutils
+vi
+which
+xfsprogs
 
 # communication.packages
 irssi
