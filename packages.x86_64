@@ -309,7 +309,8 @@ gst-plugins-ugly
 gpart
 
 # package.notification
-kalu
+#kalu
+eos-update-notifier
 
 # AUR-support 
 yay
