@@ -4,6 +4,9 @@ base
 base-devel
 
 # adding old base packages
+mkinitcpio
+mkinitcpio-busybox
+mkinitcpio-nfs-utils
 cryptsetup
 device-mapper
 dhcpcd
