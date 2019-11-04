@@ -1,5 +1,8 @@
 These are the basic needed files and folders to build EndeavourOS system.
 
+To get more info on how we put everything together read here:
+https://github.com/endeavouros-team/EndeavourOS-archiso/wiki/EndeavourOS-ISO
+
 [![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)]()
 
 ## Add and enable endeavour Repository at your system
