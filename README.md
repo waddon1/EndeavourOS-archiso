@@ -7,22 +7,16 @@ https://github.com/endeavouros-team/EndeavourOS-archiso/wiki/EndeavourOS-ISO
 
 # This is configured to run the build process inside an actual installed EndeavourOS system.
 
-## Add and enable endeavour Repository at your system
+## Add and enable EndeavourOS Repository at your system
 
-add the repo bellow to your /etc/pacman.conf
-
-`[endeavouros]`\
-`SigLevel = PackageRequired`\
-`Include = /etc/pacman.d/endeavouros-mirrorlist`
-
-If you want to add calamares package add it's repo to your /etc/pacman.conf
+Add calamares package repo to your /etc/pacman.conf
 
 `[endeavouros_calamares]`\
 `SigLevel = PackageRequired`\
 `Server = https://github.com/endeavouros-team/mirrors/releases/download/endeavouros_calamares/`
 
 
-If you want to add the developer repo add to your /etc/pacman.conf
+Add the developer repo add to your /etc/pacman.conf
 
 `[endeavouros_developer]`\
 `SigLevel = PackageRequired`\
