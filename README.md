@@ -5,29 +5,9 @@ https://github.com/endeavouros-team/EndeavourOS-archiso/wiki/EndeavourOS-ISO
 
 [![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)]()
 
+# This is configured to run the build process inside an actual installed EndeavourOS system.
+
 ## Add and enable endeavour Repository at your system
-
-If you added the old endeavour repo, please uninstall
-
-`sudo pacman -Rns endeavour-keyring endeavour-mirrorlist`
-
-`remove the old repo from /etc/pacman.conf`
-
-OBS: Do in this order!
-
-
-install keyring package:
-
-
-*bellow is an example, you may need to change to the latest package version. Please check https://github.com/endeavouros-team/mirrors/releases/tag/mirror2
-
-`wget https://github.com/endeavouros-team/mirrors/releases/download/mirror2/endeavouros-keyring-1-4-any.pkg.tar.xz`
-
-`wget https://github.com/endeavouros-team/mirrors/releases/download/mirror2/endeavouros-mirrorlist-1-6-any.pkg.tar.xz`
-
-`sudo pacman -U endeavouros-keyring-1-4-any.pkg.tar.xz`
-
-`sudo pacman -U endeavouros-mirrorlist-1-6-any.pkg.tar.xz`
 
 add the repo bellow to your /etc/pacman.conf
 
