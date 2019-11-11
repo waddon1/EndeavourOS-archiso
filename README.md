@@ -55,7 +55,7 @@ If you want to add the developer repo add to your /etc/pacman.conf
 `sudo pacman -Syy`
 
 ## Install necessary packages
-`sudo pacman -S archiso arch-install-scripts git --needed`
+`sudo pacman -S archiso arch-install-scripts git squashfs-tools --needed`
 
 Clone:\
 `git clone https://github.com/endeavouros-team/EndeavourOS-archiso.git`
