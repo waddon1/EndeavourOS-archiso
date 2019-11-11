@@ -178,6 +178,7 @@ wget
 xdg-user-dirs-gtk
 xz
 gpm
+gnome-keyring
 
 # network.packages
 #b43-firmware
