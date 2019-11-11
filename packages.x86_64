@@ -16,7 +16,6 @@ inetutils
 jfsutils
 less
 linux
-linux-firmware
 logrotate
 lvm2
 man-db
@@ -74,7 +73,6 @@ nvidia-installer-dkms
 # linux-headers (not anymore in base-group, needs explicit install)
 linux-headers
 dkms
-#linux-firmware (base-group ? )
 linux-firmware
 
 # loginmanager.packages
