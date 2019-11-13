@@ -33,7 +33,11 @@ which
 xfsprogs
 
 # communication.packages
-irssi
+#irssi
+
+#new featured package 
+# 11/19 -- a curses package manager
+pcurses 
 
 # hardware-support.packages
 lsscsi
@@ -174,6 +178,8 @@ wget
 xdg-user-dirs-gtk
 xz
 gpm
+
+# for ssh
 gnome-keyring
 
 # network.packages
@@ -228,7 +234,7 @@ extra-cmake-modules
 boost
 
 # calamares.modules
-#dependencies for installer modules
+# dependencies for installer modules
 
 # calamares.welcome
 upower
