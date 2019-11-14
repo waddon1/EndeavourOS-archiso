@@ -82,6 +82,8 @@ linux-firmware
 #light-locker-settings
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
+# now needed for lightdm in some cases
+accountsservice
 
 # default.desktop.endeavouros
 xfce4
