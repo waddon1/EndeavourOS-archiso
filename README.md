@@ -5,7 +5,7 @@ https://github.com/endeavouros-team/EndeavourOS-archiso/wiki/EndeavourOS-ISO
 
 [![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)]()
 
-# This is configured to run the build process inside an actual installed EndeavourOS system.
+--> This is configured to run the build process inside an actual installed EndeavourOS system.
 
 ## Add and enable EndeavourOS Repository at your system
 
