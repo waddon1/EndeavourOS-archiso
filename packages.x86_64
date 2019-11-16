@@ -37,7 +37,9 @@ xfsprogs
 
 #new featured package 
 # 11/19 -- a curses package manager
-pcurses 
+pcurses
+# beautiful terminal system load monitor
+s-tui
 
 # hardware-support.packages
 lsscsi
@@ -90,7 +92,6 @@ xfce4
 xfce4-goodies
 xfce4-pulseaudio-plugin
 grub2-theme-endeavouros
-qt5ct
 screenfetch
 
 # extra.desktop.packages
@@ -229,6 +230,7 @@ calamares_current
 lsb-release
 libpwquality
 cmake
+qt5ct
 qt5-svg
 qt5-webengine
 yaml-cpp
