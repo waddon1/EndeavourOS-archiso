@@ -59,6 +59,7 @@ xf86-video-vesa
 xorg-server
 xorg-xinit
 xorg-xkill
+xorg-xrandr
 mesa
 xf86-input-libinput
 xf86-input-synaptics
