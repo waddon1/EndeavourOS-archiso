@@ -192,7 +192,9 @@ b43-fwcutter
 broadcom-wl-dkms
 #broadcom-wl
 dnsutils
+# both needed?
 intel-ucode
+amd-ucode
 ipw2100-fw
 ipw2200-fw
 modemmanager
