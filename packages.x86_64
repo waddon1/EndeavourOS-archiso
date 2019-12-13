@@ -294,7 +294,6 @@ gparted
 
 # calamares.unpackfs
 squashfs-tools
-rsync
 
 # calamares.others
 qt5-xmlpatterns
@@ -342,6 +341,7 @@ gtop
 rsync
 hardinfo
 bash-completion
+downgrade
 
 # needed.dependencies
 pavucontrol
