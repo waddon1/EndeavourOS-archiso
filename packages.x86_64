@@ -294,6 +294,7 @@ gparted
 
 # calamares.unpackfs
 squashfs-tools
+rsync
 
 # calamares.others
 qt5-xmlpatterns
