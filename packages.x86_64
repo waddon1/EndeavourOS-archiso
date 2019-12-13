@@ -143,6 +143,7 @@ firefox
 #firefox-ublock-origin (may adding to netinstall "security" group)
  
 # theme.endeavouros
+endeavouros-theming
 arc-x-icons-theme
 capitaine-cursors
 arc-gtk-theme
