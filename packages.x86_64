@@ -32,9 +32,6 @@ vi
 which
 xfsprogs
 
-# communication.packages
-#irssi
-
 #new featured package 
 # 11/19 -- a curses package manager
 pcurses
@@ -60,9 +57,12 @@ xorg-server
 xorg-xinit
 xorg-xkill
 xorg-xrandr
+xorg-xinput
 mesa
 xf86-input-libinput
-xf86-input-synaptics
+# synaptics is no longer actively updated.
+# If possible, use libinput.
+#xf86-input-synaptics
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-fbdev
@@ -81,8 +81,6 @@ dkms
 linux-firmware
 
 # loginmanager.packages
-#light-locker
-#light-locker-settings
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 # now needed for lightdm in some cases
@@ -90,40 +88,39 @@ accountsservice
 
 # default.desktop.endeavouros
 xfce4
-xfce4-goodies
+#xfce4-goodies
 # goodies selection 
-#mousepad	
-#orage	
-#parole
-#ristretto
-#thunar-archive-plugin
-#thunar-media-tags-plugin		
-#xfce4-battery-plugin	
+mousepad	
+orage	
+parole
+ristretto
+thunar-archive-plugin
+thunar-media-tags-plugin		
+xfce4-battery-plugin	
 #xfce4-clipman-plugin	
 #xfce4-cpufreq-plugin	
 #xfce4-cpugraph-plugin	
-#xfce4-datetime-plugin		
+xfce4-datetime-plugin		
 #xfce4-diskperf-plugin		
 #xfce4-fsguard-plugin	
 #xfce4-genmon-plugin	
-#xfce4-mount-plugin	
-#xfce4-netload-plugin	
-#xfce4-notifyd	
-#xfce4-pulseaudio-plugin
-#xfce4-screensaver
-#xfce4-screenshooter
+xfce4-mount-plugin	
+xfce4-netload-plugin	
+xfce4-notifyd	
+xfce4-pulseaudio-plugin
+xfce4-screensaver
+xfce4-screenshooter
 #xfce4-sensors-plugin
 #xfce4-smartbookmark-plugin	
 #xfce4-systemload-plugin
-#xfce4-taskmanager
+xfce4-taskmanager
 #xfce4-time-out-plugin
 #xfce4-timer-plugin	
 #xfce4-verve-plugin
-#xfce4-wavelan-plugin	
-#xfce4-weather-plugin	
-#xfce4-whiskermenu-plugin
-#xfce4-xkb-plugin
-xfce4-pulseaudio-plugin
+xfce4-wavelan-plugin	
+xfce4-weather-plugin	
+xfce4-whiskermenu-plugin
+xfce4-xkb-plugin
 grub2-theme-endeavouros
 screenfetch
 
