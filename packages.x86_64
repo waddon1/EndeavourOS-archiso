@@ -126,6 +126,7 @@ screenfetch
 
 # extra.desktop.packages
 leafpad
+epdfview
 dconf-editor
 file-roller
 libwnck3
