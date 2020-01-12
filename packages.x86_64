@@ -121,7 +121,6 @@ xfce4-wavelan-plugin
 xfce4-weather-plugin	
 xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
-grub2-theme-endeavouros
 screenfetch
 
 # extra.desktop.packages
@@ -139,16 +138,6 @@ galculator
 # default.bowser.endeavour
 firefox
 #firefox-ublock-origin (may adding to netinstall "security" group)
- 
-# theme.endeavouros
-endeavouros-theming
-arc-x-icons-theme
-capitaine-cursors
-arc-gtk-theme
-gtk-engine-murrine
-gnome-themes-extra
-#elementary-icon-theme
-adwaita-icon-theme
 ttf-dejavu
 #gnu-free-fonts (unneded)
 ttf-liberation
@@ -305,11 +294,6 @@ solid
 qt5-tools
 #pythonqt
 
-# endeavouros.launcher
-yad
-gspell
-welcome
-
 # liveiso.rescue-tools
 grsync
 ddrescue
@@ -353,10 +337,6 @@ gst-plugins-bad
 gst-plugins-ugly
 gpart
 
-# package.notification
-#kalu
-eos-update-notifier
-
 # AUR-support 
 yay
 
@@ -364,5 +344,23 @@ yay
 virtualbox-guest-modules-arch
 virtualbox-guest-utils
 
-#screen tearing
+#screen tearing at ISO
 xcompmgr
+
+# theme.xfce4.endeavouros
+endeavouros-theming
+arc-x-icons-theme
+capitaine-cursors
+arc-gtk-theme
+gtk-engine-murrine
+gnome-themes-extra
+adwaita-icon-theme
+grub2-theme-endeavouros
+
+# endeavouros.launcher
+yad
+gspell
+welcome
+
+# package.notification
+eos-update-notifier
