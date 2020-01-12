@@ -46,9 +46,24 @@ Clone:\
 
 Uses archiso from archlinux as base.
 
-xfce4 as live environment
-Basic tools for a livecd
-Installer
+* xfce4 as live environment
+* Basic tools for a livecd
+* Installer
+* rescue tools included:
 
+## liveiso.rescue-tools
+grsync
+dd
+ddrescue
+dd_rescue
+testdisk
+clonezilla
+partclone
+partimage
+gftp
+hdparm
+fsarchiver
+mc
+gparted
 
 ![LiveISO Screenshot](https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/master/ISO-Shot.png "LiveISO Screenshot")
