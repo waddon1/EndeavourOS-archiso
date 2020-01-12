@@ -52,18 +52,18 @@ Uses archiso from archlinux as base.
 * rescue tools included:
 
 ## liveiso.rescue-tools
-grsync
-dd
-ddrescue
-dd_rescue
-testdisk
-clonezilla
-partclone
-partimage
-gftp
-hdparm
-fsarchiver
-mc
-gparted
+* grsync
+* dd
+* ddrescue
+* dd_rescue
+* testdisk
+* clonezilla
+* partclone
+* partimage
+* gftp
+* hdparm
+* fsarchiver
+* mc
+* gparted
 
 ![LiveISO Screenshot](https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/master/ISO-Shot.png "LiveISO Screenshot")
