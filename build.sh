@@ -15,7 +15,6 @@ gpg_key=
 verbose=""
 script_path=$(readlink -f ${0%/*})
 MKARCHISO=$script_path/mkarchiso
-ROOTFS=${work_dir}/x86_64
 
 umask 0022
 
