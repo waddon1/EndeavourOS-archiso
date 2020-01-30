@@ -39,9 +39,8 @@ chown root:root -R /etc/skel
 chmod 644 /usr/share/endeavouros/*.png
 rm -rf /usr/share/backgrounds/xfce/xfce-stripes.png
 ln -s /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png
-ln -s /usr/lib/libboost_python37.so.1.71.0 /usr/lib/libboost_python37.so.1.69.0
 ln -s /usr/lib/libpython3.8.so.1.0 /usr/lib/libpython3.7m.so.1.0
-ln -sf /usr/lib/libboost_python38.so.1.71.0 /usr/lib/libboost_python37.so.1.69.0
+ln -sf /usr/lib/libboost_python38.so.1.72.0 /usr/lib/libboost_python37.so.1.69.0
 chsh -s /bin/bash"
 }
 
