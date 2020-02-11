@@ -15,16 +15,7 @@ Add calamares package repo to your /etc/pacman.conf
 `SigLevel = PackageRequired`\
 `Server = https://github.com/endeavouros-team/mirrors/releases/download/endeavouros_calamares/`
 
-
-Add the developer repo add to your /etc/pacman.conf
-
-`[endeavouros_developer]`\
-`SigLevel = PackageRequired`\
-`Server = https://github.com/endeavouros-team/mirrors/releases/download/mirror3-developer/`
-
-
 * Uses the same signature that normal repo and has no mirrors package to install.
-
 
 `sudo pacman -Syy`
 
