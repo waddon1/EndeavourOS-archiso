@@ -262,6 +262,8 @@ boost
 
 # calamares.modules
 # dependencies for installer modules
+#for encrypted swap
+mkinitcpio-openswap
 
 # calamares.welcome
 upower
