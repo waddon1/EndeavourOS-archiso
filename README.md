@@ -1,4 +1,4 @@
-These are the basic needed files and folders to build EndeavourOS system.
+These are the basic needed files and folders to build ZirconiumOS system.
 
 To get more info on how we put everything together read here:
 https://github.com/endeavouros-team/EndeavourOS-archiso/wiki/EndeavourOS-ISO
