@@ -188,6 +188,7 @@ hwdetect
 hwinfo
 ntp
 os-prober
+grub-tools
 ckbcomp
 
 # system.packages
