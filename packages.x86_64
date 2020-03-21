@@ -189,7 +189,6 @@ hwinfo
 ntp
 os-prober
 grub-tools
-ckbcomp
 
 # system.packages
 expect
@@ -265,6 +264,9 @@ boost
 # dependencies for installer modules
 #for encrypted swap
 mkinitcpio-openswap
+
+#for showing keyboard layouts
+ckbcomp
 
 # calamares.welcome
 upower
