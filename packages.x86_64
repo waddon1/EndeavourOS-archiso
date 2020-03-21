@@ -249,7 +249,7 @@ xl2tpd
 
 # calamares.endeavour
 calamares_current
-#calamares_offline
+#calamares_test
 # calamares.dependencies
 lsb-release
 libpwquality
