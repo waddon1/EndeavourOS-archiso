@@ -122,6 +122,7 @@ xfce4-weather-plugin
 xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
 screenfetch
+neofetch
 
 # extra.desktop.packages
 leafpad
