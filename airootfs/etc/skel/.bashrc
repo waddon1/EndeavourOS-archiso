@@ -24,7 +24,7 @@ bind '"\e[B":history-search-forward'
 
 
 _GeneralCmdCheck() {
-    # A helper for function _SystemUpdate.
+    # A helper for functions UpdateArchPackages and UpdateAURPackages.
 
     echo "$@" >&2
     "$@" || {
@@ -33,32 +33,48 @@ _GeneralCmdCheck() {
     }
 }
 
-_SystemUpdate() {
-    # Updates all packages in the system.
-    # Updates official Arch packages first, then AUR packages.
+UpdateArchPackages() {
+    # Updates Arch packages.
 
     local updates="$(checkupdates)"
 
     if [ -n "$updates" ] ; then
         echo "Updates from upstream:" >&2
         echo "$updates" | sed 's|^|    |' >&2
-        _GeneralCmdCheck sudo pacman -Syu
+        _GeneralCmdCheck sudo pacman -Syu "$@"
+        return 0
     else
         echo "No upstream updates." >&2
+        return 1
     fi
+}
 
+UpdateAURPackages() {
+    # Updates AUR packages.
+
+    local updates
     if [ -x /usr/bin/yay ] ; then
         updates="$(yay -Qua)"
         if [ -n "$updates" ] ; then
             echo "Updates from AUR:" >&2
             echo "$updates" | sed 's|^|    |' >&2
-            _GeneralCmdCheck yay -Syua
+            _GeneralCmdCheck yay -Syua "$@"
         else
             echo "No AUR updates." >&2
         fi
     else
         echo "Warning: /usr/bin/yay does not exist." >&2
     fi
+}
+
+UpdateAllPackages() {
+    # Updates all packages in the system.
+    # Upstream (i.e. Arch) packages are updated first.
+    # If there are Arch updates, you should run
+    # this function a second time to update
+    # the AUR packages too.
+
+    UpdateArchPackages || UpdateAURPackages
 }
 
 
@@ -86,6 +102,4 @@ _open_files_for_editing() {
 ##
 
 # alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
-
-alias SystemUpdate='_SystemUpdate'             # Updates all Arch and AUR packages in your system.
 ################################################################################
