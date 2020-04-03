@@ -60,6 +60,9 @@ xf86-video-fbdev
 xf86-video-intel
 #xf86-video-nouveau
 nvidia-installer-dkms
+nvidia
+nvidia-utils
+nvidia-settings
 
 # kernel.endeavour
 # linux (base-group)
