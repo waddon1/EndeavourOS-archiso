@@ -310,6 +310,7 @@ rsync
 hardinfo
 bash-completion
 downgrade
+pcurses
 
 # needed.dependencies
 pavucontrol
