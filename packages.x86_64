@@ -328,8 +328,8 @@ gpart
 yay
 
 #virtualbox.packages
-virtualbox-guest-modules-arch
 virtualbox-guest-utils
+virtualbox-guest-dkms
 
 #Vmware.packages
 open-vm-tools
