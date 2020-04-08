@@ -347,7 +347,7 @@ gpart
 yay
 
 #virtualbox.packages
-virtualbox-guest-modules-arch
+virtualbox-guest-dkms
 virtualbox-guest-utils
 
 #screen tearing at ISO
