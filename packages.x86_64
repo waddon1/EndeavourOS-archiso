@@ -112,6 +112,7 @@ gtk-engine-murrine
 gnome-themes-extra
 adwaita-icon-theme
 grub2-theme-endeavouros
+eos-xfce4-terminal-colors
 
 # extra.desktop.packages
 leafpad
