@@ -32,12 +32,6 @@ vi
 which
 xfsprogs
 
-#new featured package 
-# 11/19 -- a curses package manager
-pcurses
-# beautiful terminal system load monitor
-s-tui
-
 # hardware-support.packages
 lsscsi
 sdparm
@@ -60,18 +54,15 @@ xorg-xrandr
 xorg-xinput
 mesa
 xf86-input-libinput
-# synaptics is no longer actively updated.
-# If possible, use libinput.
-#xf86-input-synaptics
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-fbdev
 xf86-video-intel
 #xf86-video-nouveau
 nvidia-installer-dkms
-#nvidia
-#nvidia-utils
-#nvidia-settings
+nvidia
+nvidia-utils
+nvidia-settings
 
 # kernel.endeavour
 # linux (base-group)
@@ -97,32 +88,31 @@ ristretto
 thunar-archive-plugin
 thunar-media-tags-plugin		
 xfce4-battery-plugin	
-#xfce4-clipman-plugin	
-#xfce4-cpufreq-plugin	
-#xfce4-cpugraph-plugin	
-xfce4-datetime-plugin		
-#xfce4-diskperf-plugin		
-#xfce4-fsguard-plugin	
-#xfce4-genmon-plugin	
+xfce4-datetime-plugin			
 xfce4-mount-plugin	
 xfce4-netload-plugin	
 xfce4-notifyd	
 xfce4-pulseaudio-plugin
 xfce4-screensaver
 xfce4-screenshooter
-#xfce4-sensors-plugin
-#xfce4-smartbookmark-plugin	
-#xfce4-systemload-plugin
 xfce4-taskmanager
-#xfce4-time-out-plugin
-#xfce4-timer-plugin	
-#xfce4-verve-plugin
 xfce4-wavelan-plugin	
 xfce4-weather-plugin	
 xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
 screenfetch
 neofetch
+
+# theme.xfce4.endeavouros
+endeavouros-theming
+arc-x-icons-theme
+capitaine-cursors
+arc-gtk-theme
+gtk-engine-murrine
+gnome-themes-extra
+adwaita-icon-theme
+grub2-theme-endeavouros
+eos-xfce4-terminal-colors
 
 # extra.desktop.packages
 leafpad
@@ -132,15 +122,12 @@ file-roller
 libwnck3
 network-manager-applet
 transmission-gtk
-#zsh
-#grml-zsh-config
 galculator
 
 # default.bowser.endeavour
 firefox
-#firefox-ublock-origin (may adding to netinstall "security" group)
+# fonts
 ttf-dejavu
-#gnu-free-fonts (unneded)
 ttf-liberation
 ttf-bitstream-vera
 ttf-ubuntu-font-family
@@ -148,7 +135,6 @@ cantarell-fonts
 ttf-croscore
 ttf-carlito
 ttf-caladea
-#terminus-font (bitmap fonts not working with pango)
 noto-fonts
 noto-fonts-cjk
 opendesktop-fonts
@@ -211,7 +197,6 @@ gnome-keyring
 #b43-firmware
 b43-fwcutter
 broadcom-wl-dkms
-#broadcom-wl
 dnsutils
 # both needed?
 intel-ucode
@@ -250,6 +235,7 @@ xl2tpd
 # calamares.endeavour
 calamares_current
 #calamares_test
+
 # calamares.dependencies
 lsb-release
 libpwquality
@@ -265,7 +251,6 @@ boost
 # dependencies for installer modules
 #for encrypted swap
 mkinitcpio-openswap
-
 #for showing keyboard layouts
 ckbcomp
 
@@ -273,9 +258,6 @@ ckbcomp
 upower
 
 # calamares.partition
-#kde partition manager
-#partitionmanager
-#gnome-icon-theme
 kcoreaddons
 kconfig
 ki18n
@@ -325,11 +307,11 @@ pulseaudio-jack
 # developers.wishes
 htop 
 glances
-gtop
 rsync
 hardinfo
 bash-completion
 downgrade
+pcurses
 
 # needed.dependencies
 pavucontrol
@@ -350,18 +332,13 @@ yay
 virtualbox-guest-dkms
 virtualbox-guest-utils
 
+#Vmware.packages
+open-vm-tools
+xf86-input-vmmouse
+xf86-video-vmware
+
 #screen tearing at ISO
 xcompmgr
-
-# theme.xfce4.endeavouros
-endeavouros-theming
-arc-x-icons-theme
-capitaine-cursors
-arc-gtk-theme
-gtk-engine-murrine
-gnome-themes-extra
-adwaita-icon-theme
-grub2-theme-endeavouros
 
 # endeavouros.launcher
 yad
