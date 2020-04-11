@@ -1,5 +1,5 @@
 [Configuration]
-BackgroundDarkness=0.840000
+BackgroundDarkness=0.920000
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
