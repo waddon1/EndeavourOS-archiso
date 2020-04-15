@@ -189,6 +189,9 @@ wget
 xdg-user-dirs-gtk
 xz
 gpm
+# both needed?
+intel-ucode
+amd-ucode
 
 # for ssh
 gnome-keyring
@@ -198,9 +201,6 @@ gnome-keyring
 b43-fwcutter
 broadcom-wl-dkms
 dnsutils
-# both needed?
-intel-ucode
-amd-ucode
 ipw2100-fw
 ipw2200-fw
 modemmanager
@@ -231,6 +231,7 @@ ppp
 pptpclient
 vpnc
 xl2tpd
+r8168
 
 # calamares.endeavour
 calamares_current
