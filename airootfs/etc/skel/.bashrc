@@ -7,7 +7,18 @@
 
 [[ -f ~/.welcome_screen ]] && . ~/.welcome_screen
 
-PS1='[\u@\h \W]\$ '
+_set_my_PS1() {
+    local iso_version="$(grep ^VERSION= /etc/os-release | cut -d '=' -f 2)"
+    if [ -n "$iso_version" ] ; then
+        local prefix="eos-"
+        local iso_info="$prefix$iso_version"
+        PS1="[\u@$iso_info \W]\$ "
+    else
+        PS1='[\u@\h \W]\$ '
+    fi
+}
+_set_my_PS1
+unset -f _set_my_PS1
 
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
