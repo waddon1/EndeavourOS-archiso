@@ -114,7 +114,7 @@ make_customize_airootfs() {
 
     cp ${script_path}/airootfs/etc/pacman.conf ${work_dir}/x86_64/airootfs/etc
 
-    echo "VERSION='$iso_version'" >> ${work_dir}/x86_64/airootfs/usr/lib/os-release
+    echo "VERSION=$iso_version" >> ${work_dir}/x86_64/airootfs/usr/lib/os-release
 
     curl -o ${work_dir}/x86_64/airootfs/etc/pacman.d/mirrorlist 'https://www.archlinux.org/mirrorlist/?country=all&protocol=http&use_mirror_status=on'
 
