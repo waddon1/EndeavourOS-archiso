@@ -8,13 +8,14 @@
 [[ -f ~/.welcome_screen ]] && . ~/.welcome_screen
 
 _set_my_PS1() {
-    local iso_version="$(grep ^VERSION= /etc/os-release | cut -d '=' -f 2)"
-    if [ -n "$iso_version" ] ; then
-        local prefix="eos-"
-        local iso_info="$prefix$iso_version"
-        PS1="[\u@$iso_info \W]\$ "
-    else
-        PS1='[\u@\h \W]\$ '
+    PS1='[\u@\h \W]\$ '
+    if [ "$(whoami)" = "liveuser" ] ; then
+        local iso_version="$(grep ^VERSION= /etc/os-release | cut -d '=' -f 2)"
+        if [ -n "$iso_version" ] ; then
+            local prefix="eos-"
+            local iso_info="$prefix$iso_version"
+            PS1="[\u@$iso_info \W]\$ "
+        fi
     fi
 }
 _set_my_PS1
