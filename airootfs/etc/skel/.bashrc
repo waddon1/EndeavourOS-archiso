@@ -83,7 +83,8 @@ UpdateArchPackages() {
 
     _CheckArchNews
 
-    local updates="$(yay -Qu --repo)"
+    #local updates="$(yay -Qu --repo)"
+    local updates="$(checkupdates)"
     if [ -n "$updates" ] ; then
         echo "Updates from upstream:" >&2
         echo "$updates" | sed 's|^|    |' >&2
