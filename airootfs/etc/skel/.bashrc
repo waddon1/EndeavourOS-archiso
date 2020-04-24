@@ -56,12 +56,34 @@ _CheckInternetConnection() {
     return $result
 }
 
+_CheckArchNews() {
+    local conf=/etc/eos-update-notifier.conf
+
+    if [ -z "$CheckArchNewsForYou" ] && [ -r $conf ] ; then
+        source $conf
+    fi
+
+    if [ "$CheckArchNewsForYou" = "yes" ] ; then
+        local news="$(yay -Pw)"
+        if [ -n "$news" ] ; then
+            echo "Arch news:" >&2
+            echo "$news" >&2
+            echo "" >&2
+            # read -p "Press ENTER to continue (or Ctrl-C to stop): "
+        else
+            echo "No Arch news." >&2
+        fi
+    fi
+}
+
 UpdateArchPackages() {
     # Updates Arch packages.
 
     _CheckInternetConnection || return 1
 
-    local updates="$(checkupdates)"
+    _CheckArchNews
+
+    local updates="$(yay -Qu --repo)"
     if [ -n "$updates" ] ; then
         echo "Updates from upstream:" >&2
         echo "$updates" | sed 's|^|    |' >&2
