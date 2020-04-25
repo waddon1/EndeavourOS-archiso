@@ -295,7 +295,7 @@ partimage
 gftp
 hdparm
 fsarchiver
-mc
+m
 
 # endeavouros.sound
 alsa-utils
