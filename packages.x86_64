@@ -9,7 +9,7 @@ mkinitcpio-busybox
 mkinitcpio-nfs-utils
 cryptsetup
 device-mapper
-dhcpcd
+#dhcpcd
 diffutils
 e2fsprogs
 inetutils
