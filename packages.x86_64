@@ -327,6 +327,7 @@ gst-libav
 gst-plugins-bad
 gst-plugins-ugly
 gpart
+libdvdcss
 
 # AUR-support 
 yay
