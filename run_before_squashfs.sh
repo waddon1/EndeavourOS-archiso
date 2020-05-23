@@ -28,8 +28,9 @@ wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_sw
 wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_calamares
 wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/update-mirrorlist
 wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_for_testers
-chmod +x cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher pacstrap_calamares update-mirrorlist calamares_for_testers
-mv cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher update-mirrorlist pacstrap_calamares calamares_for_testers /usr/bin/
+wget https://github.com/endeavouros-team/install-scripts/raw/master/rank_pacman_key.sh
+chmod +x cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher pacstrap_calamares update-mirrorlist calamares_for_testers rank_pacman_key.sh
+mv cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher update-mirrorlist pacstrap_calamares calamares_for_testers rank_pacman_key.sh /usr/bin/
 wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/mousepad.dconf
 dbus-launch dconf load / < mousepad.dconf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
@@ -40,8 +41,6 @@ chown root:root -R /etc/skel
 chmod 644 /usr/share/endeavouros/*.png
 rm -rf /usr/share/backgrounds/xfce/xfce-stripes.png
 ln -s /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png
-ln -s /usr/lib/libpython3.8.so.1.0 /usr/lib/libpython3.7m.so.1.0
-ln -sf /usr/lib/libboost_python38.so.1.72.0 /usr/lib/libboost_python37.so.1.69.0
 chsh -s /bin/bash"
 }
 
