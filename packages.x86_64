@@ -349,5 +349,7 @@ yad
 gspell
 welcome
 
+# endeavouros.hooks
+
 # package.notification
 eos-update-notifier
