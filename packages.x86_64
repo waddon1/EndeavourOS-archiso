@@ -350,6 +350,7 @@ gspell
 welcome
 
 # endeavouros.hooks
+eos-hooks
 
 # package.notification
 eos-update-notifier
