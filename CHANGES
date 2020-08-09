@@ -1,0 +1,7 @@
+August 09th 2020
+
+Started updating archiso to new pattern
+
+Not sure if there is a replacement to customize_airootfs, may be better using run_before_mksquashfs
+
+Noticed the existence of os-release and lsb-hooks still at airootfs files, removed, now needs testing.
