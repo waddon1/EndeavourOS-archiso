@@ -1,3 +1,28 @@
+#
+# Additions from new archiso config files
+
+bind-tools
+#broadcom-wl
+darkhttpd
+edk2-shell
+grml-zsh-config
+irssi
+kitty-terminfo
+lftp
+lynx
+memtest86+
+mkinitcpio-archiso
+nbd
+nmap
+nvme-cli
+rxvt-unicode-terminfo
+sudo
+syslinux
+systemd-resolvconf
+terminus-font
+termite-terminfo
+vim
+
 #default.groups.packages
 # now is a meta package
 base

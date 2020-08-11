@@ -54,6 +54,13 @@ run_once() {
     fi
 }
 
+bypass_umount_error(){
+
+# Not used for now
+umount -l $script_path/work/x86_64/airootfs/proc $script_path/work/x86_64/airootfs/dev || true
+
+}
+
 # Setup custom pacman.conf with current cache directories.
 make_pacman_conf() {
     local _cache_dirs

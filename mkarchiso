@@ -22,9 +22,7 @@ sfs_mode="sfs"
 sfs_comp="xz"
 gpg_key=
 
-script_path=$(readlink -f ${0%/*})
-$PACSTRAP=$script_path/pacstrap
-
+script_path="$( cd -P "$( dirname "$(readlink -f "$0")" )" && pwd )"
 # executed inside _mkairootfs_sfs right before squashfs
 RUN_BEFORE_SQUASHFS=${script_path}/run_before_squashfs.sh
 
@@ -162,9 +160,9 @@ _pacman ()
     _msg_info "Installing packages to '${work_dir}/airootfs/'..."
 
     if [[ "${quiet}" = "y" ]]; then
-        $PACSTRAP -C "${pacman_conf}" -c -G -M "${work_dir}/airootfs" "$@" &> /dev/null
+        pacstrap -C "${pacman_conf}" -c -G -M "${work_dir}/airootfs" "$@" &> /dev/null
     else
-        $PACSTRAP -C "${pacman_conf}" -c -G -M "${work_dir}/airootfs" "$@"
+        pacstrap -C "${pacman_conf}" -c -G -M "${work_dir}/airootfs" "$@"
     fi
 
     _msg_info "Packages installed successfully!"
