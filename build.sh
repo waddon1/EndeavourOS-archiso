@@ -114,6 +114,22 @@ make_packages() {
     fi
 }
 
+# Copy mkinitcpio archiso hooks and build initramfs (airootfs)
+make_setup_mkinitcpio() {
+    local _hook
+    mkdir -p ${work_dir}/x86_64/airootfs/etc/initcpio/hooks
+    mkdir -p ${work_dir}/x86_64/airootfs/etc/initcpio/install
+    for _hook in archiso archiso_shutdown archiso_loop_mnt; do
+        cp /usr/lib/initcpio/hooks/${_hook} ${work_dir}/x86_64/airootfs/etc/initcpio/hooks
+        cp /usr/lib/initcpio/install/${_hook} ${work_dir}/x86_64/airootfs/etc/initcpio/install
+    done
+    sed -i "s|/usr/lib/initcpio/|/etc/initcpio/|g" ${work_dir}/x86_64/airootfs/etc/initcpio/install/archiso_shutdown
+    cp /usr/lib/initcpio/install/archiso_kms ${work_dir}/x86_64/airootfs/etc/initcpio/install
+    cp /usr/lib/initcpio/archiso_shutdown ${work_dir}/x86_64/airootfs/etc/initcpio
+    cp ${script_path}/mkinitcpio.conf ${work_dir}/x86_64/airootfs/etc/mkinitcpio-archiso.conf
+}
+
+
 # Customize installation (airootfs)
 make_customize_airootfs() {
     if [[ -e "${script_path}/airootfs/etc/passwd" ]]; then
@@ -209,6 +225,12 @@ make_efi() {
          s|%INSTALL_DIR%|${install_dir}|g" \
         "${script_path}/efiboot/loader/entries/archiso-x86_64-usb.conf" > \
         "${work_dir}/iso/loader/entries/archiso-x86_64.conf"
+	
+    sed "s|%ARCHISO_LABEL%|${iso_label}|g;
+         s|%INSTALL_DIR%|${install_dir}|g" \
+        "${script_path}/efiboot/loader/entries/archiso-x86_64-usb-nonfree.conf" > \
+        "${work_dir}/iso/loader/entries/archiso-x86_64-nonfree.conf"
+	
 
     # edk2-shell based UEFI shell
     # shellx64.efi is picked up automatically when on /
@@ -242,6 +264,11 @@ make_efiboot() {
          s|%INSTALL_DIR%|${install_dir}|g" \
         "${script_path}/efiboot/loader/entries/archiso-x86_64-cd.conf" > \
         "${work_dir}/efiboot/loader/entries/archiso-x86_64.conf"
+	
+    sed "s|%ARCHISO_LABEL%|${iso_label}|g;
+         s|%INSTALL_DIR%|${install_dir}|g" \
+        "${script_path}/efiboot/loader/entries/archiso-x86_64-cd-nonfree.conf" > \
+        "${work_dir}/efiboot/loader/entries/archiso-x86_64-nonfree.conf"	
 
     # shellx64.efi is picked up automatically when on /
     cp "${work_dir}/iso/shellx64.efi" "${work_dir}/efiboot/"
