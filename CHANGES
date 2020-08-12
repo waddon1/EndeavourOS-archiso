@@ -28,6 +28,6 @@ make_setup_mkinitcpio() {
 to build.sh
 
 * removed mkinitcpio-archiso from packages.x86_64 (not needed on iso if initcpio folder is present inside airootfs folder)
----> copy initcpio folder to airootfs.
+---> copy initcpio folder to airootfs/etc/.
 
 
