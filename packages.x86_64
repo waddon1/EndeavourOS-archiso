@@ -354,3 +354,6 @@ eos-hooks
 
 # package.notification
 eos-update-notifier
+
+# endeavouros.mirrors_servers
+keyserver-rank
