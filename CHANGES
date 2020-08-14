@@ -30,4 +30,18 @@ to build.sh
 * removed mkinitcpio-archiso from packages.x86_64 (not needed on iso if initcpio folder is present inside airootfs folder)
 ---> copy initcpio folder to airootfs/etc/.
 
+August 14th
+NetworkManager.service removed from run_before_mksquash to test new archiso implementation for wifi and ethernet.
+OBS: Readded, it's needed
 
+rm -r airootfs/etc/systemd/system/{etc-pacman.d-gnupg.mount,pacman-init.service,reflector.service,choose-mirror.service}
+
+airootfs/etc/pacman.d/gnupg/gpg.conf created with the following config to avoid keyserver error from archlinux default server
+
+no-greeting
+no-permission-warning
+lock-never
+keyserver-options timeout=10
+keyserver-options import-clean
+keyserver-options no-self-sigs-only
+keyserver keyserver.ubuntu.com 
