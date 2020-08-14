@@ -45,3 +45,17 @@ keyserver-options timeout=10
 keyserver-options import-clean
 keyserver-options no-self-sigs-only
 keyserver keyserver.ubuntu.com 
+
+
+github log:
+ create mode 100644 airootfs/etc/pacman.d/gnupg/gpg.conf
+ delete mode 100755 airootfs/etc/systemd/system/choose-mirror.service
+ delete mode 100755 airootfs/etc/systemd/system/etc-pacman.d-gnupg.mount
+ delete mode 100755 airootfs/etc/systemd/system/pacman-init.service
+ delete mode 100755 airootfs/etc/systemd/system/reflector.service
+ delete mode 100755 airootfs/root/deprecated_customize_airootfs.sh
+ delete mode 100755 airootfs/root/deprecated_endeavouros_customize_airootfs.sh
+ delete mode 100755 airootfs/usr/local/bin/Installation_guide
+ delete mode 100755 airootfs/usr/local/bin/choose-mirror
+ delete mode 100755 deprecated_endeavouros_customize_airootfs.sh
+
