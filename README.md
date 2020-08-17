@@ -20,7 +20,7 @@ Add calamares package repo to your /etc/pacman.conf
 `sudo pacman -Syy`
 
 ## Install necessary packages
-`sudo pacman -S archiso arch-install-scripts git squashfs-tools --needed`
+`sudo pacman -S archiso mkinitcpio-archiso git squashfs-tools --needed`
 
 Clone:\
 `git clone https://github.com/endeavouros-team/EndeavourOS-archiso.git`

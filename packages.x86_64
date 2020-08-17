@@ -9,7 +9,7 @@ mkinitcpio-busybox
 mkinitcpio-nfs-utils
 cryptsetup
 device-mapper
-dhcpcd
+#dhcpcd
 diffutils
 e2fsprogs
 inetutils
@@ -113,6 +113,7 @@ gnome-themes-extra
 adwaita-icon-theme
 grub2-theme-endeavouros
 endeavouros-xfce4-terminal-colors
+gnome-packagekit
 
 # extra.desktop.packages
 leafpad
@@ -189,6 +190,9 @@ wget
 xdg-user-dirs-gtk
 xz
 gpm
+# both needed?
+intel-ucode
+amd-ucode
 
 # for ssh
 gnome-keyring
@@ -198,9 +202,6 @@ gnome-keyring
 b43-fwcutter
 broadcom-wl-dkms
 dnsutils
-# both needed?
-intel-ucode
-amd-ucode
 ipw2100-fw
 ipw2200-fw
 modemmanager
@@ -231,6 +232,7 @@ ppp
 pptpclient
 vpnc
 xl2tpd
+r8168
 
 # calamares.endeavour
 calamares_current
@@ -294,6 +296,7 @@ gftp
 hdparm
 fsarchiver
 mc
+eos-log-tool
 
 # endeavouros.sound
 alsa-utils
@@ -324,6 +327,7 @@ gst-libav
 gst-plugins-bad
 gst-plugins-ugly
 gpart
+libdvdcss
 
 # AUR-support 
 yay
@@ -345,5 +349,11 @@ yad
 gspell
 welcome
 
+# endeavouros.hooks
+eos-hooks
+
 # package.notification
 eos-update-notifier
+
+# endeavouros.mirrors_servers
+keyserver-rank
