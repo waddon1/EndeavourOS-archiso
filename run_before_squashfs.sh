@@ -48,6 +48,9 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable NetworkManager.service vboxservice.service vmtoolsd.service vmware-vmblock-fuse.service systemd-networkd-wait-online systemd-timesyncd
 systemctl set-default multi-user.target
 
+cp -rf /usr/share/mkinitcpio/hook.preset /etc/mkinitcpio.d/linux.preset
+sed -i 's?%PKGBASE%?linux?' /etc/mkinitcpio.d/linux.preset
+
 pacman-key --init
 pacman-key --add /usr/share/pacman/keyrings/endeavouros.gpg && sudo pacman-key --lsign-key 497AF50C92AD2384C56E1ACA003DB8B0CB23504F
 pacman-key --populate
