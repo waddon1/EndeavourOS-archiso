@@ -381,3 +381,4 @@ eos-update-notifier
 
 # endeavouros.mirrors_servers
 keyserver-rank
+reflector-simple
