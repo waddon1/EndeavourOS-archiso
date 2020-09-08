@@ -79,6 +79,9 @@ make_custom_airootfs() {
 
         [[ -e "${_airootfs}/etc/shadow" ]] && chmod -f 0400 -- "${_airootfs}/etc/shadow"
         [[ -e "${_airootfs}/etc/gshadow" ]] && chmod -f 0400 -- "${_airootfs}/etc/gshadow"
+	
+	mkdir -p "${_airootfs}/usr/lib"
+	echo "VERSION=$iso_version" >> "${_airootfs}/usr/lib/endeavouros-release"
 
         # Set up user home directories and permissions
         if [[ -e "${_airootfs}/etc/passwd" ]]; then
