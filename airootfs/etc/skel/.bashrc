@@ -10,7 +10,7 @@
 _set_my_PS1() {
     PS1='[\u@\h \W]\$ '
     if [ "$(whoami)" = "liveuser" ] ; then
-        local iso_version="$(grep ^VERSION= /etc/endeavouros-release | cut -d '=' -f 2)"
+        local iso_version="$(grep ^VERSION= /usr/lib/endeavouros-release | cut -d '=' -f 2)"
         if [ -n "$iso_version" ] ; then
             local prefix="eos-"
             local iso_info="$prefix$iso_version"
