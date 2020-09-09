@@ -116,7 +116,7 @@ endeavouros-xfce4-terminal-colors
 gnome-packagekit
 
 # extra.desktop.packages
-leafpad
+xed
 epdfview
 dconf-editor
 file-roller
