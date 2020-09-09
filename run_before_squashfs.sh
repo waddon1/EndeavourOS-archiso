@@ -45,7 +45,7 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
-systemctl enable NetworkManager.service vboxservice.service vmtoolsd.service vmware-vmblock-fuse.service systemd-networkd-wait-online systemd-timesyncd
+systemctl enable NetworkManager.service vboxservice.service vmtoolsd.service vmware-vmblock-fuse.service systemd-timesyncd
 systemctl set-default multi-user.target
 
 cp -rf /usr/share/mkinitcpio/hook.preset /etc/mkinitcpio.d/linux.preset
@@ -66,7 +66,6 @@ wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_sw
 wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_calamares
 wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/update-mirrorlist
 wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_for_testers
-wget https://github.com/endeavouros-team/install-scripts/raw/master/rank_pacman_key.sh
 chmod +x cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher pacstrap_calamares update-mirrorlist calamares_for_testers rank_pacman_key.sh
 mv cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher update-mirrorlist pacstrap_calamares calamares_for_testers rank_pacman_key.sh /usr/bin/
 wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/mousepad.dconf
