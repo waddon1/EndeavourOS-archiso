@@ -1,3 +1,27 @@
+#
+# Additions from new archiso config files
+
+bind-tools
+#broadcom-wl
+darkhttpd
+edk2-shell
+grml-zsh-config
+irssi
+kitty-terminfo
+lftp
+lynx
+memtest86+
+nbd
+nmap
+nvme-cli
+rxvt-unicode-terminfo
+sudo
+syslinux
+systemd-resolvconf
+terminus-font
+termite-terminfo
+vim
+
 #default.groups.packages
 # now is a meta package
 base
@@ -113,7 +137,6 @@ gnome-themes-extra
 adwaita-icon-theme
 grub2-theme-endeavouros
 endeavouros-xfce4-terminal-colors
-gnome-packagekit
 
 # extra.desktop.packages
 xed
@@ -347,7 +370,6 @@ xcompmgr
 # endeavouros.launcher
 yad
 gspell
-reflector-simple
 welcome
 
 # endeavouros.hooks
@@ -358,3 +380,4 @@ eos-update-notifier
 
 # endeavouros.mirrors_servers
 keyserver-rank
+reflector-simple
