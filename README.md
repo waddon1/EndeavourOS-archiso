@@ -57,4 +57,4 @@ Uses archiso from archlinux as base.
 * mc
 * gparted
 
-![LiveISO Screenshot](https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/master/ISO-Shot.png "LiveISO Screenshot")
+![LiveISO Screenshot](https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/master/EndeavourOS-ISO-2020.png "LiveISO Screenshot")
