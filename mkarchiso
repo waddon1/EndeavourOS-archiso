@@ -172,13 +172,21 @@ _pacman ()
 _cleanup () {
     _msg_info "Cleaning up what we can on airootfs..."
 
-    # Delete initcpio image(s)
-    if [[ -d "${work_dir}/airootfs/boot" ]]; then
-        find "${work_dir}/airootfs/boot" -type f -name '*.img' -delete
-    fi
     # Delete kernel(s)
     if [[ -d "${work_dir}/airootfs/boot" ]]; then
         find "${work_dir}/airootfs/boot" -type f -name 'vmlinuz*' -delete
+    fi
+    # Delete initramfs-linux.img
+    if [[ -d "${work_dir}/airootfs/boot" ]]; then
+        find "${work_dir}/airootfs/boot" -type f -name 'initramfs-linux.img' -delete
+    fi
+    # Delete initramfs-linux-fallback.img
+    if [[ -d "${work_dir}/airootfs/boot" ]]; then
+        find "${work_dir}/airootfs/boot" -type f -name 'initramfs-linux-fallback.img' -delete
+    fi
+    # Delete archiso image
+    if [[ -d "${work_dir}/airootfs/boot" ]]; then
+        find "${work_dir}/airootfs/boot" -type f -name 'archiso.img' -delete
     fi
     # Delete pacman database sync cache files (*.tar.gz)
     if [[ -d "${work_dir}/airootfs/var/lib/pacman" ]]; then

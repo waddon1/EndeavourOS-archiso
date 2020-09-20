@@ -60,6 +60,7 @@ sed -i 's|^GRUB_CMDLINE_LINUX_DEFAULT=\"\(.*\)\"$|GRUB_CMDLINE_LINUX_DEFAULT=\"\
 sed -i 's?GRUB_DISTRIBUTOR=.*?GRUB_DISTRIBUTOR=\"EndeavourOS\"?' /etc/default/grub
 sed -i 's?\#GRUB_THEME=.*?GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.txt?g' /etc/default/grub
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
+rm /boot/grub/grub.cfg
 wget https://github.com/endeavouros-team/install-scripts/raw/master/cleaner_script.sh
 wget https://github.com/endeavouros-team/install-scripts/raw/master/chrooted_cleaner_script.sh
 wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_switcher
@@ -78,6 +79,12 @@ chown root:root -R /etc/skel
 chmod 644 /usr/share/endeavouros/*.png
 rm -rf /usr/share/backgrounds/xfce/xfce-stripes.png
 ln -s /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png
+git clone https://github.com/endeavouros-team/calamares_branding
+cd calamares_branding/branding
+cp -R endeavouros /usr/share/calamares/branding/
+cd ..
+cd ..
+rm -R calamares_branding
 chsh -s /bin/bash"
 }
 

@@ -21,6 +21,7 @@ systemd-resolvconf
 terminus-font
 termite-terminfo
 vim
+mkinitcpio-archiso
 
 #default.groups.packages
 # now is a meta package
