@@ -26,7 +26,7 @@ ShowInstallerIsoInfo() {
     if [ -r $file ] ; then
         cat $file
     else
-        echo "Sorry, installer ISO info is not available."
+        echo "Sorry, installer ISO info is not available." >&2
     fi
 }
 
@@ -60,7 +60,8 @@ _GeneralCmdCheck() {
 }
 
 _CheckInternetConnection() {
-    curl --silent --connect-timeout 8 https://8.8.8.8 >/dev/null
+    # curl --silent --connect-timeout 8 https://8.8.8.8 >/dev/null
+    eos-connection-checker
     local result=$?
     test $result -eq 0 || echo "No internet connection!" >&2
     return $result
