@@ -148,7 +148,7 @@ network-manager-applet
 transmission-gtk
 galculator
 
-# default.bowser.endeavour
+# default.browser.endeavour
 firefox
 # fonts
 ttf-dejavu
