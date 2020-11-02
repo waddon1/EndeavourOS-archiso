@@ -61,12 +61,12 @@ sed -i 's?GRUB_DISTRIBUTOR=.*?GRUB_DISTRIBUTOR=\"EndeavourOS\"?' /etc/default/gr
 sed -i 's?\#GRUB_THEME=.*?GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.txt?g' /etc/default/grub
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 rm /boot/grub/grub.cfg
-wget https://github.com/endeavouros-team/install-scripts/raw/master/cleaner_script.sh
-wget https://github.com/endeavouros-team/install-scripts/raw/master/chrooted_cleaner_script.sh
-wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_switcher
-wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_calamares
-wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/update-mirrorlist
-wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_for_testers
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/3_2_32_1-nov_20_ISO/cleaner_script.sh
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/3_2_32_1-nov_20_ISO/chrooted_cleaner_script.sh
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/3_2_32_1-nov_20_ISO/calamares_switcher
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/3_2_32_1-nov_20_ISO/pacstrap_calamares
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/3_2_32_1-nov_20_ISO/update-mirrorlist
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/3_2_32_1-nov_20_ISO/calamares_for_testers
 chmod +x cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher pacstrap_calamares update-mirrorlist calamares_for_testers
 mv cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher update-mirrorlist pacstrap_calamares calamares_for_testers /usr/bin/
 wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/mousepad.dconf
