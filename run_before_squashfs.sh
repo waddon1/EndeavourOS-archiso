@@ -79,12 +79,6 @@ chown root:root -R /etc/skel
 chmod 644 /usr/share/endeavouros/*.png
 rm -rf /usr/share/backgrounds/xfce/xfce-stripes.png
 ln -s /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png
-git clone https://github.com/endeavouros-team/calamares_branding
-cd calamares_branding/branding
-cp -R endeavouros /usr/share/calamares/branding/
-cd ..
-cd ..
-rm -R calamares_branding
 chsh -s /bin/bash"
 }
 
