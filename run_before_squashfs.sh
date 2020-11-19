@@ -69,10 +69,10 @@ wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/3_2_32_1
 wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/3_2_32_1-nov_20_ISO/calamares_for_testers
 chmod +x cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher pacstrap_calamares update-mirrorlist calamares_for_testers
 mv cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher update-mirrorlist pacstrap_calamares calamares_for_testers /usr/bin/
-wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/mousepad.dconf
-dbus-launch dconf load / < mousepad.dconf
-sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
-rm mousepad.dconf
+wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/xed.dconf
+dbus-launch dconf load / < xed.dconf
+sudo -H -u liveuser bash -c 'dbus-launch dconf load / < xed.dconf'
+rm xed.dconf
 chmod -R 700 /root
 chown root:root -R /root
 chown root:root -R /etc/skel
