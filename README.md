@@ -5,6 +5,8 @@ https://github.com/endeavouros-team/EndeavourOS-archiso/wiki/EndeavourOS-ISO
 
 [![Maintenance](https://img.shields.io/maintenance/yes/2020.svg)]()
 
+[![](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/images/0)](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/links/0)[![](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/images/1)](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/links/1)[![](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/images/2)](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/links/2)[![](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/images/3)](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/links/3)[![](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/images/4)](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/links/4)[![](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/images/5)](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/links/5)[![](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/images/6)](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/links/6)[![](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/images/7)](https://sourcerer.io/fame/killajoe/endeavouros-team/EndeavourOS-archiso/links/7)
+
 --> This is configured to run the build process inside an actual installed EndeavourOS system.
 
 ## Add and enable EndeavourOS Repository at your system
