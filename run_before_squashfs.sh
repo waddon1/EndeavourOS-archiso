@@ -61,18 +61,18 @@ sed -i 's?GRUB_DISTRIBUTOR=.*?GRUB_DISTRIBUTOR=\"EndeavourOS\"?' /etc/default/gr
 sed -i 's?\#GRUB_THEME=.*?GRUB_THEME=\/boot\/grub\/themes\/EndeavourOS\/theme.txt?g' /etc/default/grub
 echo 'GRUB_DISABLE_SUBMENU=y' >> /etc/default/grub
 rm /boot/grub/grub.cfg
-wget https://github.com/endeavouros-team/install-scripts/raw/master/cleaner_script.sh
-wget https://github.com/endeavouros-team/install-scripts/raw/master/chrooted_cleaner_script.sh
-wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_switcher
-wget https://github.com/endeavouros-team/install-scripts/raw/master/pacstrap_calamares
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/cleaner_script.sh
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/chrooted_cleaner_script.sh
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/calamares_switcher
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/pacstrap_calamares
 wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/update-mirrorlist
-wget https://github.com/endeavouros-team/install-scripts/raw/master/calamares_for_testers
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/calamares_for_testers
 chmod +x cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher pacstrap_calamares update-mirrorlist calamares_for_testers
 mv cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher update-mirrorlist pacstrap_calamares calamares_for_testers /usr/bin/
-wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/mousepad.dconf
-dbus-launch dconf load / < mousepad.dconf
-sudo -H -u liveuser bash -c 'dbus-launch dconf load / < mousepad.dconf'
-rm mousepad.dconf
+wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/xed.dconf
+dbus-launch dconf load / < xed.dconf
+sudo -H -u liveuser bash -c 'dbus-launch dconf load / < xed.dconf'
+rm xed.dconf
 chmod -R 700 /root
 chown root:root -R /root
 chown root:root -R /etc/skel

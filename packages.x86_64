@@ -1,11 +1,7 @@
 #
 # Additions from new archiso config files
-
 bind-tools
-#broadcom-wl
-darkhttpd
 edk2-shell
-grml-zsh-config
 irssi
 kitty-terminfo
 lftp
@@ -20,27 +16,32 @@ syslinux
 systemd-resolvconf
 terminus-font
 termite-terminfo
-vim
 mkinitcpio-archiso
 
 #default.groups.packages
-# now is a meta package
+# now packages
 base
 base-devel
 
-# adding old base packages
+
+# kernel.endeavour
+# linux (base-group)
+# not anymore in base-group, needs explicit install
+# adding old base packages here as a list
+linux
+linux-headers
+linux-firmware
 mkinitcpio
 mkinitcpio-busybox
 mkinitcpio-nfs-utils
+#dkms (broadcom-wl-dkms will bring this in)
 cryptsetup
 device-mapper
-#dhcpcd
 diffutils
 e2fsprogs
 inetutils
 jfsutils
 less
-linux
 logrotate
 man-db
 man-pages
@@ -89,13 +90,6 @@ nvidia
 nvidia-utils
 nvidia-settings
 
-# kernel.endeavour
-# linux (base-group)
-# linux-headers (not anymore in base-group, needs explicit install)
-linux-headers
-dkms
-linux-firmware
-
 # loginmanager.packages
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
@@ -106,7 +100,8 @@ accountsservice
 xfce4
 #xfce4-goodies
 # goodies selection 
-mousepad	
+# mousepad (issues with sudo)
+xed
 orage	
 parole
 ristretto
@@ -139,7 +134,6 @@ grub2-theme-endeavouros
 endeavouros-xfce4-terminal-colors
 
 # extra.desktop.packages
-xed
 epdfview
 dconf-editor
 file-roller
@@ -150,6 +144,7 @@ galculator
 
 # default.browser.endeavour
 firefox
+
 # fonts
 ttf-dejavu
 ttf-liberation
@@ -213,7 +208,6 @@ wget
 xdg-user-dirs-gtk
 xz
 gpm
-# both needed?
 intel-ucode
 amd-ucode
 
@@ -319,7 +313,6 @@ gftp
 hdparm
 fsarchiver
 mc
-eos-log-tool
 
 # endeavouros.sound
 alsa-utils
@@ -333,7 +326,7 @@ pulseaudio-jack
 # developers.wishes
 htop 
 glances
-rsync
+#rsync (grsync will bring this in)
 hardinfo
 bash-completion
 downgrade
@@ -367,7 +360,7 @@ xf86-video-vmware
 #screen tearing at ISO
 xcompmgr
 
-# endeavouros.launcher
+# endeavouros.welcome
 yad
 gspell
 welcome
@@ -375,8 +368,9 @@ welcome
 # endeavouros.hooks
 eos-hooks
 
-# package.notification
+# endeavouros.tools
 eos-update-notifier
+eos-log-tool
 
 # endeavouros.mirrors_servers
 keyserver-rank
