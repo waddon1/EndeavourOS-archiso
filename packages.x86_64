@@ -101,8 +101,7 @@ xfce4
 #xfce4-goodies
 # goodies selection 
 # mousepad (issues with sudo)
-xed
-orage	
+xed	
 parole
 ristretto
 thunar-archive-plugin
