@@ -77,8 +77,8 @@ chmod -R 700 /root
 chown root:root -R /root
 chown root:root -R /etc/skel
 chmod 644 /usr/share/endeavouros/*.png
-rm -rf /usr/share/backgrounds/xfce/xfce-stripes.png
-ln -s /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-stripes.png
+rm -rf /usr/share/backgrounds/xfce/xfce-verticals.png
+ln -s /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png /usr/share/backgrounds/xfce/xfce-verticals.png
 chsh -s /bin/bash"
 }
 
