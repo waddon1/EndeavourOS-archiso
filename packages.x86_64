@@ -141,6 +141,9 @@ network-manager-applet
 transmission-gtk
 galculator
 
+# help chat
+telegram-desktop
+
 # default.browser.endeavour
 firefox
 
