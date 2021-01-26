@@ -344,6 +344,7 @@ freetype2
 gst-libav
 gst-plugins-bad
 gst-plugins-ugly
+gst-plugin-pipewire
 gpart
 libdvdcss
 
