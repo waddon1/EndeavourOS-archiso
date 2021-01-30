@@ -27,6 +27,7 @@ cd liveuser-desktop-settings
 rm -R /home/liveuser/.config
 cp -R .config /home/liveuser/
 cp user_pkglist.txt /home/liveuser/
+chown liveuser:users /home/liveuser/user_pkglist.txt
 cp LICENSE /home/liveuser/
 chown -R liveuser:users /home/liveuser/.config
 cd .. 
