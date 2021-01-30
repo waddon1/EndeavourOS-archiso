@@ -68,8 +68,8 @@ smartmontools
 refind-efi
 
 # keyring_mirros.endeavour
-endeavouros-keyring
 endeavouros-mirrorlist
+endeavouros-keyring
 
 # xorg.endeavour
 xf86-video-vesa
