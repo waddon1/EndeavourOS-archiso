@@ -261,7 +261,6 @@ calamares_current
 lsb-release
 libpwquality
 cmake
-qt5ct
 qt5-svg
 qt5-webengine
 yaml-cpp
