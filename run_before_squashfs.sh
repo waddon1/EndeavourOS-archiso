@@ -21,7 +21,7 @@ ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 usermod -s /usr/bin/bash root
 cp -aT /etc/skel/ /root/
 chmod 700 /root
-! id liveuser && useradd -m -p \"\" -g users -G 'adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel' -s /bin/bash liveuser
+useradd -m -p \"\" -g users -G 'sys,rfkill,wheel' -s /bin/bash liveuser
 git clone https://github.com/endeavouros-team/liveuser-desktop-settings.git
 cd liveuser-desktop-settings
 rm -R /home/liveuser/.config
