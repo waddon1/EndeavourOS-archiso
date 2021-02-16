@@ -144,18 +144,48 @@ _open_files_for_editing() {
     # Note2: uses mime bindings, so you may need to use
     #        e.g. a file manager to make some file bindings.
 
-    local progs="xdg-open exo-open"     # One of these programs is used.
-    local prog
-    for prog in $progs ; do
-        if [ -x /usr/bin/$xx ] ; then
-            $prog "$@" >& /dev/null &
-            return
-        fi
-    done
+    if [ -x /usr/bin/exo-open ] ; then
+        echo "exo-open $*" >&2
+        /usr/bin/exo-open "$@" >& /dev/null &
+        return
+    fi
+    if [ -x /usr/bin/xdg-open ] ; then
+        for file in "$@" ; do
+            echo "xdg-open $file" >&2
+            /usr/bin/xdg-open "$file" >& /dev/null &
+        done
+        return
+    fi
+
     echo "Sorry, none of programs [$progs] is found." >&2
     echo "Tip: install one of packages" >&2
     for prog in $progs ; do
         echo "    $(pacman -Qqo "$prog")" >&2
+    done
+}
+
+_Pacdiff() {
+    source /etc/eos-script-lib-yad.conf || return 1
+    [ -n "$EOS_WELCOME_PACDIFFERS" ] || {
+        echo "Warning: EOS_WELCOME_PACDIFFERS missing from /etc/eos-script-lib-yad.conf" >&2
+        return 1
+    }
+    local differ
+    for differ in "${EOS_WELCOME_PACDIFFERS[@]}" ; do
+        case "${differ::1}" in
+            /)
+                if [ -x $differ ] ; then
+                    DIFFPROG=$differ /usr/bin/su-c_wrapper /usr/bin/pacdiff
+                    break
+                fi
+                ;;
+            *)
+                if [ -x /usr/bin/$differ ] ; then
+                    DIFFPROG=/usr/bin/$differ /usr/bin/su-c_wrapper /usr/bin/pacdiff
+                    break
+                fi
+                ;;
+        esac
     done
 }
 
@@ -166,4 +196,5 @@ _open_files_for_editing() {
 ##
 
 # alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
+# alias pacdiff=_Pacdiff
 ################################################################################
