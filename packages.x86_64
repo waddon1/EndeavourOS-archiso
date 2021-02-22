@@ -65,7 +65,7 @@ sg3_utils
 smartmontools
 
 # EFI/UEFI.packages
-refind-efi
+refind
 
 # keyring_mirros.endeavour
 endeavouros-mirrorlist
