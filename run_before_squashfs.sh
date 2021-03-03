@@ -26,10 +26,15 @@ git clone https://github.com/endeavouros-team/liveuser-desktop-settings.git
 cd liveuser-desktop-settings
 rm -R /home/liveuser/.config
 cp -R .config /home/liveuser/
+chown -R liveuser:users /home/liveuser/.config
 cp user_pkglist.txt /home/liveuser/
 chown liveuser:users /home/liveuser/user_pkglist.txt
+rm /home/liveuser/.bashrc
+cp .bashrc /home/liveuser/
+chown liveuser:users /home/liveuser/.bashrc
+cp -R community_editions /home/liveuser/
+chown -R liveuser:users /home/liveuser/community_editions
 cp LICENSE /home/liveuser/
-chown -R liveuser:users /home/liveuser/.config
 cd .. 
 rm -R liveuser-desktop-settings
 chmod 755 /etc/sudoers.d
