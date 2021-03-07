@@ -319,6 +319,7 @@ mc
 alsa-utils
 alsa-plugins
 alsa-firmware
+sof-firmware
 pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-equalizer
