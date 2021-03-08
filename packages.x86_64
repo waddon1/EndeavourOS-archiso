@@ -333,6 +333,7 @@ hardinfo
 bash-completion
 downgrade
 pcurses
+tldr
 
 # needed.dependencies
 pavucontrol
