@@ -151,15 +151,17 @@ firefox
 ttf-dejavu
 ttf-liberation
 ttf-bitstream-vera
-ttf-ubuntu-font-family
+#ttf-ubuntu-font-family
 cantarell-fonts
-ttf-croscore
-ttf-carlito
-ttf-caladea
+#ttf-croscore
+#ttf-carlito
+#ttf-caladea
 noto-fonts
-noto-fonts-cjk
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-kr-fonts
+adobe-source-han-sans-cn-fonts
 opendesktop-fonts
-ttf-opensans
+#ttf-opensans
 
 # filesystems.packages
 btrfs-progs
