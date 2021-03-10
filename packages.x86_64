@@ -2,10 +2,10 @@
 # Additions from new archiso config files
 bind-tools
 edk2-shell
-irssi
-kitty-terminfo
-lftp
-lynx
+#irssi
+#kitty-terminfo
+#lftp
+#lynx
 memtest86+
 nbd
 nmap
@@ -14,14 +14,14 @@ rxvt-unicode-terminfo
 sudo
 syslinux
 systemd-resolvconf
-terminus-font
-termite-terminfo
+#terminus-font
+#termite-terminfo
 mkinitcpio-archiso
 
 #default.groups.packages
 # now packages
 base
-base-devel
+#base-devel
 
 
 # kernel.endeavour
@@ -86,7 +86,7 @@ xf86-video-fbdev
 xf86-video-intel
 #xf86-video-nouveau
 nvidia-installer-dkms
-nvidia
+nvidia-dkms
 nvidia-utils
 nvidia-settings
 
@@ -306,16 +306,16 @@ qt5-tools
 
 # liveiso.rescue-tools
 grsync
-ddrescue
-dd_rescue
-testdisk
+#ddrescue
+#dd_rescue
+#testdisk
 clonezilla
-partclone
-partimage
+#partclone
+#partimage
 gftp
 hdparm
 fsarchiver
-mc
+#mc
 
 # endeavouros.sound
 alsa-utils
