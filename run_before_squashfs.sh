@@ -74,8 +74,9 @@ wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/c
 wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/pacstrap_calamares
 wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/update-mirrorlist
 wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/calamares_for_testers
-chmod +x cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher pacstrap_calamares update-mirrorlist calamares_for_testers
-mv cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher update-mirrorlist pacstrap_calamares calamares_for_testers /usr/bin/
+wget https://raw.githubusercontent.com/endeavouros-team/install-scripts/master/prepare-calamares
+chmod +x cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher pacstrap_calamares update-mirrorlist calamares_for_testers prepare-calamares
+mv cleaner_script.sh chrooted_cleaner_script.sh calamares_switcher update-mirrorlist pacstrap_calamares calamares_for_testers prepare-calamares /usr/bin/
 wget https://raw.githubusercontent.com/endeavouros-team/liveuser-desktop-settings/master/dconf/xed.dconf
 dbus-launch dconf load / < xed.dconf
 sudo -H -u liveuser bash -c 'dbus-launch dconf load / < xed.dconf'
