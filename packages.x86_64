@@ -364,7 +364,7 @@ xf86-video-vmware
 xcompmgr
 
 # endeavouros.welcome
-yad
+yad-eos
 gspell
 welcome
 
