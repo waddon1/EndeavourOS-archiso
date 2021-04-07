@@ -88,7 +88,8 @@ xf86-video-intel
 nvidia-installer-dkms
 nvidia-dkms
 nvidia-utils
-nvidia-settings
+#removed as it is not needed to run nvidia driver
+#nvidia-settings
 
 # loginmanager.packages
 lightdm-gtk-greeter
