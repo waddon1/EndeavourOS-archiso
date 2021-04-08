@@ -6,8 +6,8 @@ set -e -u
 
 iso_name=endeavouros
 iso_label="ENDEAVOUROS"
-iso_publisher="Arch Linux <http://www.archlinux.org>"
-iso_application="Arch Linux Live/Rescue CD"
+iso_publisher="EndeavourOS GNU/Linux <https://endeavouros.com>"
+iso_application="EndeavourOS GNU/Linux Live/Rescue CD"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=work
