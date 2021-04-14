@@ -165,28 +165,16 @@ _open_files_for_editing() {
 }
 
 _Pacdiff() {
-    source /etc/eos-script-lib-yad.conf || return 1
-    [ -n "$EOS_WELCOME_PACDIFFERS" ] || {
-        echo "Warning: EOS_WELCOME_PACDIFFERS missing from /etc/eos-script-lib-yad.conf" >&2
-        return 1
-    }
-    local differ
-    for differ in "${EOS_WELCOME_PACDIFFERS[@]}" ; do
-        case "${differ::1}" in
-            /)
-                if [ -x $differ ] ; then
-                    DIFFPROG=$differ /usr/bin/su-c_wrapper /usr/bin/pacdiff
-                    break
-                fi
-                ;;
-            *)
-                if [ -x /usr/bin/$differ ] ; then
-                    DIFFPROG=/usr/bin/$differ /usr/bin/su-c_wrapper /usr/bin/pacdiff
-                    break
-                fi
-                ;;
-        esac
-    done
+    local differ pacdiff=/usr/bin/pacdiff
+
+    if [ -n "$(echo q | $pacdiff)" ] ; then
+        for differ in kdiff3 meld diffuse ; do
+            if [ -x /usr/bin/$differ ] ; then
+                DIFFPROG=$differ su-c_wrapper $pacdiff
+                break
+            fi
+        done
+    fi
 }
 
 #------------------------------------------------------------
