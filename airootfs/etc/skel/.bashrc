@@ -167,7 +167,7 @@ _open_files_for_editing() {
 _Pacdiff() {
     local differ pacdiff=/usr/bin/pacdiff
 
-    if [ -n "$(echo q | $pacdiff)" ] ; then
+    if [ -n "$(echo q | DIFFPROG=diff $pacdiff)" ] ; then
         for differ in kdiff3 meld diffuse ; do
             if [ -x /usr/bin/$differ ] ; then
                 DIFFPROG=$differ su-c_wrapper $pacdiff
