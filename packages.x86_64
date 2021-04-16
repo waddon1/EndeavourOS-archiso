@@ -330,6 +330,7 @@ pulseaudio-jack
 glances
 #rsync (grsync will bring this in)
 hardinfo
+inxi
 bash-completion
 downgrade
 pcurses
@@ -368,7 +369,7 @@ xcompmgr
 yad-eos
 gspell
 welcome
-meld
+diffuse
 
 # endeavouros.hooks
 eos-hooks
