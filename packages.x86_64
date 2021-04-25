@@ -134,7 +134,6 @@ grub2-theme-endeavouros
 endeavouros-xfce4-terminal-colors
 
 # extra.desktop.packages
-epdfview
 dconf-editor
 file-roller
 libwnck3
