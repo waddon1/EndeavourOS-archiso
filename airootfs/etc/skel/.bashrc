@@ -164,19 +164,6 @@ _open_files_for_editing() {
     done
 }
 
-_Pacdiff() {
-    local differ pacdiff=/usr/bin/pacdiff
-
-    if [ -n "$(echo q | DIFFPROG=diff $pacdiff)" ] ; then
-        for differ in kdiff3 meld diffuse ; do
-            if [ -x /usr/bin/$differ ] ; then
-                DIFFPROG=$differ su-c_wrapper $pacdiff
-                break
-            fi
-        done
-    fi
-}
-
 #------------------------------------------------------------
 
 ## Aliases for the functions above.
@@ -184,5 +171,8 @@ _Pacdiff() {
 ##
 
 # alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
-# alias pacdiff=_Pacdiff
+
+## Other potentially useful aliases.
+#
+# alias pacdiff=eos-pacdiff
 ################################################################################
