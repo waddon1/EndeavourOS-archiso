@@ -353,7 +353,6 @@ libdvdcss
 yay
 
 #virtualbox.packages
-virtualbox-guest-dkms
 virtualbox-guest-utils
 
 #Vmware.packages
